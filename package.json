@@ -7,7 +7,8 @@
     "docsify": "bin/docsify"
   },
   "files": [
-    "bin"
+    "bin",
+    "src"
   ],
   "scripts": {
     "test": "eslint src"
