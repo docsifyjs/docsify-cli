@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/QingWei-Li/docsify-cli.svg?branch=master)](https://travis-ci.org/QingWei-Li/docsify-cli)
 [![npm](https://img.shields.io/npm/v/docsify-cli.svg)](https://www.npmjs.com/package/docsify-cli)
 
-> docsify cli - A magical documentation generator.
+> 🖌 docsify cli - A magical documentation generator.
 
 ## Screenshots
 ![](https://cloud.githubusercontent.com/assets/7565692/20603335/10bf80a0-b29c-11e6-93bb-5c3187f76edd.gif)
