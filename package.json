@@ -1,0 +1,45 @@
+{
+  "name": "docsify-cli",
+  "version": "0.0.0",
+  "description": "docsify cli - A magical documentation generator.",
+  "main": "bin/docsify",
+  "bin": {
+    "docsify": "bin/docsify"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "test": "eslint src"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "keywords": [
+    "docsify",
+    "doc",
+    "docs",
+    "documentation",
+    "creator",
+    "generator",
+    "cli"
+  ],
+  "author": "qingwei-li <cinwell.li@gmail.com> (https://github.com/QingWei-Li)",
+  "homepage": "https://github.com/QingWei-Li/docsify-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QingWei-Li/docsify-cli.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "cp-file": "^4.1.0",
+    "docsify": "^0.0.5",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-config-vue": "^2.0.1",
+    "eslint-plugin-vue": "^1.0.0"
+  }
+}

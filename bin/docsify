@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+var run = require('../src')
+
+program
+  .version(require('../package.json').version)
+
+program
+  .command('init [path .]')
+  .description('create a new docs')
+  .option('-l, --local', 'use local vendor', false)
+  .option('-t, --theme [vue|buble]', 'theme file, default vue.css', 'vue')
+  .action(run.init)
+
+program
+  .command('serve [path .]')
+  .description('run serve to preview')
+  .option('-p, --port [port 3000]', 'listen port', 3000)
+  .action(run.serve)
+
+program.parse(process.argv)
+
+if (!program.args.length) program.help()
