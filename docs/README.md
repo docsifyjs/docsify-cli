@@ -4,6 +4,9 @@
 
 > 🖌 docsify cli - A magical documentation generator.
 
+## Links
+- [docsify](https://github.com/QingWei-Li/docsify)
+
 ## Screenshots
 ![](https://cloud.githubusercontent.com/assets/7565692/20603335/10bf80a0-b29c-11e6-93bb-5c3187f76edd.gif)
 
@@ -30,7 +33,7 @@ docsify init [path]
 docsify serve [path]
 ```
 
-- `- --port` Listen port, default 3000
+- `-p --port` Listen port, default 3000
 
 ## License
 MIT
