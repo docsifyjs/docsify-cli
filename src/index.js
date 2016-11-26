@@ -41,7 +41,7 @@ exports.init = function (path, option) {
 
     var vendor = exist(cwd('node_modules/docsify')) || pwd('../node_modules/docsify')
 
-    cp(resolve(vendor, 'lib/docsify.pack.min.js'), target('vendor/docsify.js'))
+    cp(resolve(vendor, 'lib/docsify.min.js'), target('vendor/docsify.js'))
     cp(resolve(vendor, `themes/${option.theme}.css`), target(`vendor/themes/${option.theme}.css`))
   }
 
