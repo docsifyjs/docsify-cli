@@ -68,7 +68,7 @@ exports.serve = function (path, option) {
   var main = resolve(path, '404.html')
 
   if (!exist(main)) {
-    console.log(`\nNot found 404.html, please run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
+    console.log(`\nNot found 404.html in ${path}, please run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
     process.exit(0)
   }
   http.createServer(function (req, res) {
