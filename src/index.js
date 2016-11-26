@@ -4,9 +4,6 @@ var resolve = require('path').resolve
 var cp = require('cp-file').sync
 var serveStatic = require('serve-static')
 
-var GREEN_OPEN = '\u001B[32m'
-var GREEN_CLOSE = '\u001B[39m'
-
 var cwd = function (path) {
   return resolve(process.cwd(), path)
 }
@@ -22,6 +19,10 @@ var exist = function (path) {
 var replace = function (file, tpl, replace) {
   fs.writeFileSync(file, fs.readFileSync(file).toString().replace(tpl, replace), 'utf-8')
 }
+
+var GREEN_OPEN = '\u001B[32m'
+var GREEN_CLOSE = '\u001B[39m'
+var PKG = exist(cwd('package.json')) ? require(cwd('package.json')) : null
 
 exports.init = function (path, option) {
   path = path || '.'
@@ -48,6 +49,17 @@ exports.init = function (path, option) {
   cp(main, target('404.html'))
 
   replace(target('404.html'), 'vue.css', `${option.theme}.css`)
+
+  if (PKG.name) {
+    replace(target('404.html'), 'Document', PKG.name)
+  }
+  if (PKG.description) {
+    replace(target('404.html'), 'Description', PKG.description)
+  }
+  if (PKG.repository) {
+    const repo = (PKG.repository.url || PKG.repository).replace(/\.git$/g, '')
+    replace(target('404.html'), 'data-repo=""', `data-repo="${repo}"`)
+  }
   console.log(msg)
 }
 

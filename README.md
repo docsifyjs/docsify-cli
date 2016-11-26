@@ -30,7 +30,7 @@ docsify init [path]
 docsify serve [path]
 ```
 
-- `- --port` Listen port, default 3000
+- `-p --port` Listen port, default 3000
 
 ## License
 MIT
