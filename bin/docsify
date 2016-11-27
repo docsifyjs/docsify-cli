@@ -10,7 +10,7 @@ program
   .command('init [path .]')
   .description('create a new docs')
   .option('-l, --local', 'use local vendor', false)
-  .option('-t, --theme [vue|buble]', 'theme file, default vue.css', 'vue')
+  .option('-t, --theme [vue|buble|pure]', 'theme file, default vue.css', 'vue')
   .action(run.init)
 
 program
