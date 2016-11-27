@@ -1,6 +1,6 @@
 {
   "name": "docsify-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "docsify cli - A magical documentation generator.",
   "main": "bin/docsify",
   "bin": {
