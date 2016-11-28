@@ -57,7 +57,7 @@ exports.init = function (path, option) {
     replace(target('404.html'), 'Description', PKG.description)
   }
   if (PKG.repository) {
-    const repo = (PKG.repository.url || PKG.repository).replace(/\.git$/g, '')
+    const repo = (PKG.repository.url || PKG.repository).replace(/\.git$/g, '').replace(/^git\+/g, '')
     replace(target('404.html'), 'data-repo=""', `data-repo="${repo}"`)
   }
   console.log(msg)
