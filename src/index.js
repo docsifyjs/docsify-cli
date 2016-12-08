@@ -44,21 +44,29 @@ exports.init = function (path, option) {
     cp(resolve(vendor, 'lib/docsify.min.js'), target('vendor/docsify.js'))
     cp(resolve(vendor, `lib/themes/${option.theme}.css`), target(`vendor/themes/${option.theme}.css`))
   }
+  var filename = '404.html'
+
+  if (option.router) {
+    filename = 'index.html'
+  }
 
   cp(readme, target('README.md'))
-  cp(main, target('404.html'))
+  cp(main, target(filename))
 
-  replace(target('404.html'), 'vue.css', `${option.theme}.css`)
+  replace(target(filename), 'vue.css', `${option.theme}.css`)
 
   if (PKG.name) {
-    replace(target('404.html'), 'Document', PKG.name)
+    replace(target(filename), 'Document', PKG.name + PKG.description ? ('-' + PKG.description) : '')
   }
   if (PKG.description) {
-    replace(target('404.html'), 'Description', PKG.description)
+    replace(target(filename), 'Description', PKG.description)
   }
   if (PKG.repository) {
     const repo = (PKG.repository.url || PKG.repository).replace(/\.git$/g, '').replace(/^git\+/g, '')
-    replace(target('404.html'), 'data-repo=""', `data-repo="${repo}"`)
+    replace(target(filename), 'data-repo=""', `data-repo="${repo}"`)
+  }
+  if (option.router) {
+    replace(target(filename), '></script>', ` data-router></script>`)
   }
   console.log(msg)
 }

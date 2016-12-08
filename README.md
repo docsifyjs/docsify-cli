@@ -26,6 +26,7 @@ docsify init [path]
 
 #### options
 - `-l --local` Copy `docsify` to docs path, default use `unpkg.com` cdn
+- `-l --router` Use hash router and create a `index.html`
 - `-t --theme` Choose theme, default `vue.css`
 
 ### serve - run serve to preview
