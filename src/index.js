@@ -73,15 +73,23 @@ exports.init = function (path, option) {
 
 exports.serve = function (path, option) {
   path = path || '.'
-  var main = resolve(path, '404.html')
+  var indexFile = resolve(path, 'index.html')
+  var notfoundFile = resolve(path, '404.html')
+  var main = indexFile
+  var code = 200
 
-  if (!exist(main)) {
-    console.log(`\nNot found 404.html in ${path}, please run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
+  if (!exist(indexFile) && !exist(notfoundFile)) {
+    console.log(`\nplease run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
     process.exit(0)
   }
+  if (!exist(indexFile)) {
+    main = notfoundFile
+    code = 404
+  }
+
   http.createServer(function (req, res) {
     serveStatic(path)(req, res, function () {
-      res.writeHead(404, { 'Content-Type': 'text/html' })
+      res.writeHead(code, { 'Content-Type': 'text/html' })
       res.end(fs.readFileSync(main))
     })
   }).listen(option.port)

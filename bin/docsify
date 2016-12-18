@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
 var program = require('commander')
+var updateNotifier = require('update-notifier')
 var run = require('../src')
+var pkg = require('../package.json')
+
+updateNotifier({ pkg: pkg }).notify()
 
 program
   .version(require('../package.json').version)
