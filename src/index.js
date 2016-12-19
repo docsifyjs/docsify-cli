@@ -22,7 +22,7 @@ var replace = function (file, tpl, replace) {
 
 var GREEN_OPEN = '\u001B[32m'
 var GREEN_CLOSE = '\u001B[39m'
-var PKG = exist(cwd('package.json')) ? require(cwd('package.json')) : null
+var PKG = exist(cwd('package.json')) ? require(cwd('package.json')) : {}
 
 exports.init = function (path, option) {
   path = path || '.'
@@ -52,6 +52,7 @@ exports.init = function (path, option) {
 
   cp(readme, target('README.md'))
   cp(main, target(filename))
+  cp(pwd('template/.nojekyll'), target('.nojekyll'))
 
   replace(target(filename), 'vue.css', `${option.theme}.css`)
 
