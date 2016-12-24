@@ -34,21 +34,17 @@ exports.init = function (path, option) {
     return resolve(path, file)
   }
   var readme = exist(cwd('README.md')) || pwd('template/README.md')
-  var main = pwd('template/404.html')
+  var main = pwd('template/index.html')
 
   if (option.local) {
-    main = pwd('template/404-local.html')
+    main = pwd('template/index.local.html')
 
     var vendor = exist(cwd('node_modules/docsify')) || pwd('../node_modules/docsify')
 
     cp(resolve(vendor, 'lib/docsify.min.js'), target('vendor/docsify.js'))
     cp(resolve(vendor, `lib/themes/${option.theme}.css`), target(`vendor/themes/${option.theme}.css`))
   }
-  var filename = '404.html'
-
-  if (option.router) {
-    filename = 'index.html'
-  }
+  var filename = 'index.html'
 
   cp(readme, target('README.md'))
   cp(main, target(filename))
@@ -66,26 +62,18 @@ exports.init = function (path, option) {
     const repo = (PKG.repository.url || PKG.repository).replace(/\.git$/g, '').replace(/^git\+/g, '')
     replace(target(filename), 'data-repo=""', `data-repo="${repo}"`)
   }
-  if (option.router) {
-    replace(target(filename), '></script>', ` data-router></script>`)
-  }
   console.log(msg)
 }
 
 exports.serve = function (path, option) {
   path = path || '.'
   var indexFile = resolve(path, 'index.html')
-  var notfoundFile = resolve(path, '404.html')
   var main = indexFile
   var code = 200
 
-  if (!exist(indexFile) && !exist(notfoundFile)) {
+  if (!exist(indexFile)) {
     console.log(`\nplease run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
     process.exit(0)
-  }
-  if (!exist(indexFile)) {
-    main = notfoundFile
-    code = 404
   }
 
   http.createServer(function (req, res) {
