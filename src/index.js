@@ -54,6 +54,7 @@ exports.init = function (path, option) {
 
   if (PKG.name) {
     replace(target(filename), 'Document', PKG.name + (PKG.description ? ('-' + PKG.description) : ''))
+    replace(target(filename), 'data-name=""', `data-name="${PKG.name}"`)
   }
   if (PKG.description) {
     replace(target(filename), 'Description', PKG.description)
