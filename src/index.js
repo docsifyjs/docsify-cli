@@ -69,8 +69,6 @@ exports.init = function (path, option) {
 exports.serve = function (path, option) {
   path = path || '.'
   var indexFile = resolve(path, 'index.html')
-  var main = indexFile
-  var code = 200
 
   if (!exist(indexFile)) {
     console.log(`\nplease run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
@@ -79,8 +77,8 @@ exports.serve = function (path, option) {
 
   http.createServer(function (req, res) {
     serveStatic(path)(req, res, function () {
-      res.writeHead(code, { 'Content-Type': 'text/html' })
-      res.end(fs.readFileSync(main))
+      res.writeHead(404)
+      res.end()
     })
   }).listen(option.port)
 
