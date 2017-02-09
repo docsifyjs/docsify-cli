@@ -1,33 +1,23 @@
 var fs = require('fs')
-var http = require('http')
-var resolve = require('path').resolve
 var cp = require('cp-file').sync
-var serveStatic = require('serve-static')
+var util = require('./util')
 
-var cwd = function (path) {
-  return resolve(process.cwd(), path)
-}
-var pwd = function (path) {
-  return resolve(__dirname, path)
-}
-var exist = function (path) {
-  if (fs.existsSync(path)) {
-    return path
-  }
-  return undefined
-}
+var exist = util.exist
+var cwd = util.cwd
+var pwd = util.pwd
+var resolve = util.resolve
+var green = util.green
+
 var replace = function (file, tpl, replace) {
   fs.writeFileSync(file, fs.readFileSync(file).toString().replace(tpl, replace), 'utf-8')
 }
 
-var GREEN_OPEN = '\u001B[32m'
-var GREEN_CLOSE = '\u001B[39m'
 var PKG = exist(cwd('package.json')) ? require(cwd('package.json')) : {}
 
 exports.init = function (path, option) {
   path = path || '.'
   var msg = `\nCreate succeed! Please run\n
-> ${GREEN_OPEN}docsify serve ${path}${GREEN_CLOSE}\n`
+> ${green(`docsify serve ${path}`)}\n`
 
   path = cwd(path)
   var target = function (file) {
@@ -66,21 +56,4 @@ exports.init = function (path, option) {
   console.log(msg)
 }
 
-exports.serve = function (path, option) {
-  path = path || '.'
-  var indexFile = resolve(path, 'index.html')
-
-  if (!exist(indexFile)) {
-    console.log(`\nplease run ${GREEN_OPEN}init${GREEN_CLOSE} before.\n`)
-    process.exit(0)
-  }
-
-  http.createServer(function (req, res) {
-    serveStatic(path)(req, res, function () {
-      res.writeHead(404)
-      res.end()
-    })
-  }).listen(option.port)
-
-  console.log(`\nListening at ${GREEN_OPEN}http://localhost:${option.port}${GREEN_CLOSE}\n`)
-}
+exports.serve = require('./serve')
