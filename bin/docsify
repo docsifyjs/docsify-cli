@@ -12,6 +12,7 @@ program
 
 program
   .command('init [path .]')
+  .alias('i')
   .description('create a new docs')
   .option('-l, --local', 'use local vendor', false)
   .option('-t, --theme [vue|buble|pure]', 'theme file, default vue.css', 'vue')
@@ -19,6 +20,7 @@ program
 
 program
   .command('serve [path .]')
+  .alias('s')
   .description('run serve to preview')
   .option('-p, --port [port 3000]', 'listen port', 3000)
   .action(run.serve)

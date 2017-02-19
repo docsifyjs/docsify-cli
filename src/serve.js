@@ -26,5 +26,8 @@ module.exports = function (path, option) {
     exts: ['md']
   }).watch(path)
 
-  console.log(`\nListening at ${green(`http://localhost:${option.port}`)}\n`)
+  console.log('\n')
+  console.log(`Serve ${green(`${path}`)}`)
+  console.log(`Listening at ${green(`http://localhost:${option.port}`)}`)
+  console.log('\n')
 }
