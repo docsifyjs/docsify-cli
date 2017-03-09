@@ -1,3 +1,3 @@
 # Headline
 
-> A awesome project.
+> An awesome project.

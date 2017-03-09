@@ -11,18 +11,45 @@ program
   .version(require('../package.json').version)
 
 program
+  .usage('init [options] <relative path>')
   .command('init [path .]')
   .alias('i')
-  .description('create a new docs')
-  .option('-l, --local', 'use local vendor', false)
-  .option('-t, --theme [vue|buble|pure]', 'theme file, default vue.css', 'vue')
+  .description('create new docs')
+  .option('-l, --local', 'copy docsify to local (default: false)', false)
+  .option('-t, --theme [vue|buble|dark|pure]', 'theme file (default: vue)', 'vue')
+  .on('--help', function() {
+    console.log('\tExamples:\n');
+    console.log('\t\tdocsify i');
+    console.log('\t\tdocsify init');
+    console.log('\t\tdocsify init -l');
+    console.log('\t\tdocsify init --local');
+    console.log('\t\tdocsify init -t buble');
+    console.log('\t\tdocsify init -t dark');
+    console.log('\t\tdocsify init --theme pure');
+    console.log('\t\tdocsify init -l -t buble');
+    console.log('\t\tdocsify init --local -t dark');
+    console.log('\t\tdocsify init --local --theme pure');
+    console.log('\t\tdocsify init "./docs"');
+    console.log('\t\tdocsify init -l "./docs"');
+    console.log('\t\tdocsify init -l -t buble "./docs"');
+    console.log('\t\tdocsify init -l -t dark "./docs"');
+    console.log('\t\tdocsify init -l -t pure "./docs"');
+  })
   .action(run.init)
 
 program
+  .usage('serve [options] <relative path>')
   .command('serve [path .]')
   .alias('s')
   .description('run serve to preview')
   .option('-p, --port [port 3000]', 'listen port', 3000)
+  .on('--help', function() {
+    console.log('\tExamples:\n');
+    console.log('\t\tdocsify s');
+    console.log('\t\tdocsify serve');
+    console.log('\t\tdocsify serve -p 8080');
+    console.log('\t\tdocsify serve --port 8080');
+  })
   .action(run.serve)
 
 program.parse(process.argv)
