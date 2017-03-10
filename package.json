@@ -11,7 +11,7 @@
     "src"
   ],
   "scripts": {
-    "test": "eslint src"
+    "test": "eslint src bin/docsify --fix"
   },
   "engines": {
     "node": ">= 4"
