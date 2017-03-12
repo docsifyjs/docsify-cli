@@ -1,10 +1,10 @@
+var chalk = require('chalk')
 var serveStatic = require('serve-static')
 var connect = require('connect')
 var livereload = require('connect-livereload')
 var lrserver = require('livereload')
 var util = require('./util')
 
-var green = util.green
 var exist = util.exist
 var resolve = util.resolve
 
@@ -13,7 +13,7 @@ module.exports = function (path, option) {
   var indexFile = resolve(path, 'index.html')
 
   if (!exist(indexFile)) {
-    console.log(`\nplease run ${green('init')} before.\n`)
+    console.log('\nplease run ' + chalk.bgWhite('docsify ' + chalk.green.bold('init')) + ' before.\n')
     process.exit(0)
   }
 
@@ -27,7 +27,7 @@ module.exports = function (path, option) {
   }).watch(path)
 
   console.log('\n')
-  console.log(`Serve ${green(`${path}`)}`)
-  console.log(`Listening at ${green(`http://localhost:${option.port}`)}`)
+  console.log('Serving ' + chalk.inverse(`${path}`))
+  console.log('Listening at ' + chalk.blue.underline('http://localhost:' + chalk.bgWhite(`${option.port}`)))
   console.log('\n')
 }

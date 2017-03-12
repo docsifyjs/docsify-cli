@@ -1,0 +1,17 @@
+{
+  "Commands:": "Commands:",
+  "Options:": "Options:",
+  "Examples:": "Examples:",
+  "boolean": "boolean",
+  "count": "count",
+  "string": "string",
+  "number": "number",
+  "array": "array",
+  "required": "required",
+  "default:": "default:",
+  "choices:": "choices:",
+  "aliases:": "aliases:",
+  "Invalid values:": "Invalid values:",
+  "Show help": "Show help",
+  "Show version number": "Show version number"
+}
