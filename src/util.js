@@ -16,3 +16,7 @@ exports.exist = function (path) {
   }
   return undefined
 }
+
+exports.green = function (str) {
+  return '\u001B[32m' + str + '\u001B[39m'
+}
