@@ -1,0 +1,16 @@
+{
+  "Commands:": "命令：",
+  "Options:": "选项：",
+  "Examples:": "示例：",
+  "boolean": "布尔",
+  "count": "计数",
+  "string": "字符串",
+  "number": "数字",
+  "array": "数组",
+  "required": "必需",
+  "default:": "默认值:",
+  "choices:": "可选值:",
+  "Invalid values:": "无效的选项值：",
+  "Show help": "显示帮助信息",
+  "Show version number": "显示版本号"
+}

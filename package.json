@@ -35,6 +35,8 @@
     "livereload": "^0.6.0",
     "serve-static": "^1.11.1",
     "update-notifier": "^1.0.3",
+    "y18n": "^3.2.1",
+    "yargonaut": "^1.1.2",
     "yargs": "^6.4.0"
   },
   "devDependencies": {

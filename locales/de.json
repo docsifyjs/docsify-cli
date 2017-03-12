@@ -1,0 +1,17 @@
+{
+  "Commands:": "Befehle:",
+  "Options:": "Optionen:",
+  "Examples:": "Beispiele:",
+  "boolean": "boolean",
+  "count": "Zähler",
+  "string": "string",
+  "number": "Zahl",
+  "array": "array",
+  "required": "erforderlich",
+  "default:": "Standard:",
+  "choices:": "Möglichkeiten:",
+  "aliases:": "Aliase:",
+  "Invalid values:": "Unzulässige Werte:",
+  "Show help": "Hilfe anzeigen",
+  "Show version number": "Version anzeigen"
+}

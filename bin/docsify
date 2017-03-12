@@ -2,16 +2,26 @@
 
 'use strict'
 
-var chalk = require('chalk')
-var pkg = require('../package.json')
-var cliVersion = pkg.version
-var updateNotifier = require('update-notifier')
-var run = require('../src')
+const pkg = require('../package.json')
+const cliVersion = pkg.version
+const updateNotifier = require('update-notifier')
+const Y18n = require('y18n')
+const run = require('../src')
 
 updateNotifier({ pkg: pkg }).notify()
 
+const y18n = Y18n({
+  directory: '../locales',
+  updateFiles: false
+})
+
+require('yargonaut')
+  .style('yellow', 'required')
+  .helpStyle('green')
+  .errorsStyle('red.bold')
+
 var argv = require('yargs')
-  .usage(chalk.bold('Usage:') + ' $0 ' + chalk.red.bold('<command>') + ' ' + chalk.blue('[options]'), {
+  .usage('Usage: $0 <command> [options]', {
     'init': {
       desc: 'create new docs',
       short: 'i'
@@ -30,14 +40,14 @@ var argv = require('yargs')
           alias: 'local',
           type: 'boolean',
           default: false,
-          desc: chalk.gray('Copy docsify files to local. Default is false.')
+          desc: 'Copy docsify files to local. Default is false.'
         })
         .option('t', {
           alias: 'theme',
           type: 'string',
           default: 'vue',
           choices: ['vue', 'buble', 'dark', 'pure'],
-          desc: chalk.gray('Theme file to be used.')
+          desc: 'Theme file to be used.'
         }),
     handler: (argv) => run.init
   })
@@ -50,25 +60,28 @@ var argv = require('yargs')
           alias: 'port',
           type: integer,
           default: 3000,
-          desc: chalk.gray('listen port')
+          desc: 'listen port'
         }),
     handler: (argv) => run.serve
   })
   .option('h', {
     alias: 'help',
     type: 'boolean',
-    desc: chalk.gray('Show this help.')
+    desc: 'Show help'
   })
   .option('v', {
     alias: 'version',
     type: 'boolean',
-    desc: chalk.gray('Print the docsify version.')
+    desc: 'Show version number'
   })
   .help('help')
-  .version(cliVersion, 'version', 'display version information')
-  .example('docsify ' + chalk.red.bold('init') + ' ' + chalk.blue('--local') + ' ' + chalk.inverse('"./docs"'))
+  .version(cliVersion, 'version', 'Show version number')
+  .example('docsify init --local "./docs"')
   .epilog('Read more about docsify on:\n' +
-    '\t' + chalk.blue.underline('https://QingWei-Li.github.io/docsify') + '\n' +
-    '\t' + chalk.blue.underline('https://QingWei-Li.github.io/docsify-cli'))
-  .showHelpOnFail(false, chalk.red('Something went wrong!') + ' Run ' + chalk.inverse('docsify --help'))
+    '\thttps://QingWei-Li.github.io/docsify\n' +
+    '\thttps://QingWei-Li.github.io/docsify-cli')
+  .showHelpOnFail(false, 'Something went wrong! Run --help')
+  .updateStrings(function (obj) {
+    y18n.updateLocale(obj)
+  })
   .argv
