@@ -1,87 +1,57 @@
 #!/usr/bin/env node
 
-'use strict'
-
-const pkg = require('../package.json')
-const cliVersion = pkg.version
-const updateNotifier = require('update-notifier')
-const Y18n = require('y18n')
-const run = require('../src')
+var program = require('commander')
+var updateNotifier = require('update-notifier')
+var run = require('../src')
+var pkg = require('../package.json')
 
 updateNotifier({ pkg: pkg }).notify()
 
-const y18n = Y18n({
-  directory: '../locales',
-  updateFiles: false
-})
+program
+  .version(require('../package.json').version)
 
-require('yargonaut')
-  .style('yellow', 'required')
-  .helpStyle('green')
-  .errorsStyle('red.bold')
+program
+  .usage('init [options] <relative path>')
+  .command('init [path .]')
+  .alias('i')
+  .description('create new docs')
+  .option('-l, --local', 'copy docsify to local (default: false)', false)
+  .option('-t, --theme [vue|buble|dark|pure]', 'theme file (default: vue)', 'vue')
+  .on('--help', function () {
+    console.log('\tExamples:\n')
+    console.log('\t\tdocsify i')
+    console.log('\t\tdocsify init')
+    console.log('\t\tdocsify init -l')
+    console.log('\t\tdocsify init --local')
+    console.log('\t\tdocsify init -t buble')
+    console.log('\t\tdocsify init -t dark')
+    console.log('\t\tdocsify init --theme pure')
+    console.log('\t\tdocsify init -l -t buble')
+    console.log('\t\tdocsify init --local -t dark')
+    console.log('\t\tdocsify init --local --theme pure')
+    console.log('\t\tdocsify init "./docs"')
+    console.log('\t\tdocsify init -l "./docs"')
+    console.log('\t\tdocsify init -l -t buble "./docs"')
+    console.log('\t\tdocsify init -l -t dark "./docs"')
+    console.log('\t\tdocsify init -l -t pure "./docs"')
+  })
+  .action(run.init)
 
-var argv = require('yargs')
-  .usage('Usage: $0 <command> [options]', {
-    'init': {
-      desc: 'create new docs',
-      short: 'i'
-    },
-    'serve': {
-      desc: 'run serve to preview',
-      short: 's'
-    }
+program
+  .usage('serve [options] <relative path>')
+  .command('serve [path .]')
+  .alias('s')
+  .description('run serve to preview')
+  .option('-p, --port [port 3000]', 'listen port', 3000)
+  .on('--help', function () {
+    console.log('\tExamples:\n')
+    console.log('\t\tdocsify s')
+    console.log('\t\tdocsify serve')
+    console.log('\t\tdocsify serve -p 8080')
+    console.log('\t\tdocsify serve --port 8080')
   })
-  .command({
-    command: 'init <path> [--local] [--theme vue]',
-    alias: 'i',
-    desc: 'create new docs',
-    builder: (yargs) => return yargs
-      .option('l', {
-          alias: 'local',
-          type: 'boolean',
-          default: false,
-          desc: 'Copy docsify files to local. Default is false.'
-        })
-        .option('t', {
-          alias: 'theme',
-          type: 'string',
-          default: 'vue',
-          choices: ['vue', 'buble', 'dark', 'pure'],
-          desc: 'Theme file to be used.'
-        }),
-    handler: (argv) => run.init
-  })
-  .command({
-    command: 'serve <path> [--port 3000]',
-    alias: 's',
-    desc: 'run serve to preview',
-    builder: (yargs) => return yargs
-      .option('p', {
-          alias: 'port',
-          type: integer,
-          default: 3000,
-          desc: 'listen port'
-        }),
-    handler: (argv) => run.serve
-  })
-  .option('h', {
-    alias: 'help',
-    type: 'boolean',
-    desc: 'Show help'
-  })
-  .option('v', {
-    alias: 'version',
-    type: 'boolean',
-    desc: 'Show version number'
-  })
-  .help('help')
-  .version(cliVersion, 'version', 'Show version number')
-  .example('docsify init --local "./docs"')
-  .epilog('Read more about docsify on:\n' +
-    '\thttps://QingWei-Li.github.io/docsify\n' +
-    '\thttps://QingWei-Li.github.io/docsify-cli')
-  .showHelpOnFail(false, 'Something went wrong! Run --help')
-  .updateStrings(function (obj) {
-    y18n.updateLocale(obj)
-  })
-  .argv
+  .action(run.serve)
+
+program.parse(process.argv)
+
+if (!program.args.length) program.help()
