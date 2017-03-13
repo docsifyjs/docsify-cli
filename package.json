@@ -2,6 +2,16 @@
   "name": "docsify-cli",
   "version": "3.0.2",
   "description": "A magical documentation generator.",
+  "author": "qingwei-li <cinwell.li@gmail.com> (https://github.com/QingWei-Li)",
+  "homepage": "https://github.com/QingWei-Li/docsify-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QingWei-Li/docsify-cli.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 4"
+  },
   "main": "bin/docsify",
   "bin": {
     "docsify": "bin/docsify"
@@ -13,8 +23,22 @@
   "scripts": {
     "test": "eslint src bin/docsify --fix"
   },
-  "engines": {
-    "node": ">= 4"
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "connect": "^3.5.0",
+    "connect-livereload": "^0.6.0",
+    "cp-file": "^4.1.0",
+    "docsify": ">=2",
+    "livereload": "^0.6.0",
+    "serve-static": "^1.11.1",
+    "update-notifier": "^1.0.3",
+    "yargonaut": "^1.1.2",
+    "yargs": "^6.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-config-vue": "^2.0.1",
+    "eslint-plugin-vue": "^1.0.0"
   },
   "keywords": [
     "docsify",
@@ -24,27 +48,5 @@
     "creator",
     "generator",
     "cli"
-  ],
-  "author": "qingwei-li <cinwell.li@gmail.com> (https://github.com/QingWei-Li)",
-  "homepage": "https://github.com/QingWei-Li/docsify-cli",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/QingWei-Li/docsify-cli.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "commander": "^2.9.0",
-    "connect": "^3.5.0",
-    "connect-livereload": "^0.6.0",
-    "cp-file": "^4.1.0",
-    "docsify": ">=2",
-    "livereload": "^0.6.0",
-    "serve-static": "^1.11.1",
-    "update-notifier": "^1.0.3"
-  },
-  "devDependencies": {
-    "eslint": "^3.10.2",
-    "eslint-config-vue": "^2.0.1",
-    "eslint-plugin-vue": "^1.0.0"
-  }
+  ]
 }

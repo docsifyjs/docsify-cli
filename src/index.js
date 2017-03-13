@@ -1,38 +1,38 @@
 var fs = require('fs')
 var cp = require('cp-file').sync
+var chalk = require('chalk')
 var util = require('./util')
 
-var exist = util.exist
+var exists = util.exists
 var cwd = util.cwd
 var pwd = util.pwd
 var resolve = util.resolve
-var green = util.green
 
 var replace = function (file, tpl, replace) {
   fs.writeFileSync(file, fs.readFileSync(file).toString().replace(tpl, replace), 'utf-8')
 }
 
-var PKG = exist(cwd('package.json')) ? require(cwd('package.json')) : {}
+var PKG = exists(cwd('package.json')) ? require(cwd('package.json')) : {}
 
-exports.init = function (path, option) {
+exports.init = function (path, local, theme) {
   path = path || '.'
-  var msg = `\nCreate succeed! Please run\n
-> ${green(`docsify serve ${path}`)}\n`
+  var msg = '\n' + chalk.green('Initialization succeeded!') + ' Please run ' +
+            chalk.inverse(`docsify serve ${path}`) + '\n'
 
   path = cwd(path)
   var target = function (file) {
     return resolve(path, file)
   }
-  var readme = exist(cwd('README.md')) || pwd('template/README.md')
+  var readme = exists(cwd('README.md')) || pwd('template/README.md')
   var main = pwd('template/index.html')
 
-  if (option.local) {
+  if (local) {
     main = pwd('template/index.local.html')
 
-    var vendor = exist(cwd('node_modules/docsify')) || pwd('../node_modules/docsify')
+    var vendor = exists(cwd('node_modules/docsify')) || pwd('../node_modules/docsify')
 
     cp(resolve(vendor, 'lib/docsify.min.js'), target('vendor/docsify.js'))
-    cp(resolve(vendor, `lib/themes/${option.theme}.css`), target(`vendor/themes/${option.theme}.css`))
+    cp(resolve(vendor, `lib/themes/${theme}.css`), target(`vendor/themes/${theme}.css`))
   }
   var filename = 'index.html'
 
@@ -40,7 +40,7 @@ exports.init = function (path, option) {
   cp(main, target(filename))
   cp(pwd('template/.nojekyll'), target('.nojekyll'))
 
-  replace(target(filename), 'vue.css', `${option.theme}.css`)
+  replace(target(filename), 'vue.css', `${theme}.css`)
 
   if (PKG.name) {
     replace(target(filename), 'Document', PKG.name + (PKG.description ? (' - ' + PKG.description) : ''))

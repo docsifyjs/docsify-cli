@@ -1,57 +1,73 @@
 #!/usr/bin/env node
 
-var program = require('commander')
-var updateNotifier = require('update-notifier')
-var run = require('../src')
-var pkg = require('../package.json')
+const pkg = require('../package.json')
+const run = require('../src')
+const chalk = require('chalk')
+const updateNotifier = require('update-notifier')
 
 updateNotifier({ pkg: pkg }).notify()
 
-program
-  .version(require('../package.json').version)
+require('yargonaut')
+  .style('yellow', 'required')
+  .helpStyle('green')
+  .errorsStyle('red.bold')
 
-program
-  .usage('init [options] <relative path>')
-  .command('init [path .]')
-  .alias('i')
-  .description('create new docs')
-  .option('-l, --local', 'copy docsify to local (default: false)', false)
-  .option('-t, --theme [vue|buble|dark|pure]', 'theme file (default: vue)', 'vue')
-  .on('--help', function () {
-    console.log('\tExamples:\n')
-    console.log('\t\tdocsify i')
-    console.log('\t\tdocsify init')
-    console.log('\t\tdocsify init -l')
-    console.log('\t\tdocsify init --local')
-    console.log('\t\tdocsify init -t buble')
-    console.log('\t\tdocsify init -t dark')
-    console.log('\t\tdocsify init --theme pure')
-    console.log('\t\tdocsify init -l -t buble')
-    console.log('\t\tdocsify init --local -t dark')
-    console.log('\t\tdocsify init --local --theme pure')
-    console.log('\t\tdocsify init "./docs"')
-    console.log('\t\tdocsify init -l "./docs"')
-    console.log('\t\tdocsify init -l -t buble "./docs"')
-    console.log('\t\tdocsify init -l -t dark "./docs"')
-    console.log('\t\tdocsify init -l -t pure "./docs"')
+var argv = require('yargs')
+  .usage(chalk.bold('Usage: docsify <command> <path> [options]'))
+  .command({
+    command: 'init <path> [--local] [--theme vue]',
+    alias: 'i',
+    desc: chalk.gray('Creates new docs'),
+    builder: (yargs) => yargs.options({
+      'local': {
+        alias: 'l',
+        default: false,
+        desc: chalk.gray('Copy docsify files to local.'),
+        nargs: 0,
+        requiresArg: false,
+        type: 'boolean'
+      },
+      'theme': {
+        alias: 't',
+        default: 'vue',
+        desc: chalk.gray('Theme file to be used.'),
+        choices: ['vue', 'buble', 'dark', 'pure'],
+        nargs: 1,
+        requiresArg: true,
+        type: 'string'
+      }
+    }),
+    handler: (argv) => run.init(argv.path, argv.local, argv.theme)
   })
-  .action(run.init)
-
-program
-  .usage('serve [options] <relative path>')
-  .command('serve [path .]')
-  .alias('s')
-  .description('run serve to preview')
-  .option('-p, --port [port 3000]', 'listen port', 3000)
-  .on('--help', function () {
-    console.log('\tExamples:\n')
-    console.log('\t\tdocsify s')
-    console.log('\t\tdocsify serve')
-    console.log('\t\tdocsify serve -p 8080')
-    console.log('\t\tdocsify serve --port 8080')
+  .command({
+    command: 'serve <path> [--port 3000]',
+    alias: 's',
+    desc: chalk.gray('Run local server to preview site.'),
+    builder: (yargs) => yargs.options({
+      'port': {
+        alias: 'p',
+        default: 3000,
+        desc: chalk.gray('Listen port.'),
+        nargs: 1,
+        requiresArg: true,
+        type: 'number'
+      }
+    }),
+    handler: (argv) => run.serve(argv.path, argv.port)
   })
-  .action(run.serve)
-
-program.parse(process.argv)
-
-if (!program.args.length) program.help()
+  .help()
+  .option('help', {
+    alias: 'h',
+    type: 'boolean',
+    desc: chalk.gray('Show help')
+  })
+  .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
+  .option('version', {
+    alias: 'v',
+    type: 'boolean',
+    desc: chalk.gray('Show version number')
+  })
+  .epilog(chalk.green('Documentation:') + '\n' +
+          '  https://QingWei-Li.github.io/docsify\n' +
+          '  https://QingWei-Li.github.io/docsify-cli\n')
+  .argv

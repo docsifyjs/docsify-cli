@@ -2,18 +2,18 @@ var serveStatic = require('serve-static')
 var connect = require('connect')
 var livereload = require('connect-livereload')
 var lrserver = require('livereload')
+var chalk = require('chalk')
 var util = require('./util')
 
-var green = util.green
-var exist = util.exist
+var exists = util.exists
 var resolve = util.resolve
 
-module.exports = function (path, option) {
+module.exports = function (path, port) {
   path = resolve(path || '.')
   var indexFile = resolve(path, 'index.html')
 
-  if (!exist(indexFile)) {
-    console.log(`\nplease run ${green('init')} before.\n`)
+  if (!exists(indexFile)) {
+    console.log('\nNo docs found, please run ' + chalk.inverse('docsify init') + ' first.\n')
     process.exit(0)
   }
 
@@ -21,13 +21,13 @@ module.exports = function (path, option) {
 
   server.use(livereload())
   server.use(serveStatic(path))
-  server.listen(option.port)
+  server.listen(port)
   lrserver.createServer({
     exts: ['md']
   }).watch(path)
 
   console.log('\n')
-  console.log(`Serve ${green(`${path}`)}`)
-  console.log(`Listening at ${green(`http://localhost:${option.port}`)}`)
+  console.log('Serving ' + chalk.inverse(`${path}`) + ' now.')
+  console.log('Listening at ' + chalk.inverse(`http://localhost:${port}`))
   console.log('\n')
 }
