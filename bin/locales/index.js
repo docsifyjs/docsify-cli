@@ -7,7 +7,7 @@ const fse = require('fs-extra')
 
 class Locales {
 
-  constructor() {
+  constructor () {
     this.y18n = Y18n({
       directory: path.resolve(__dirname),
       updateFiles: false,
@@ -15,10 +15,10 @@ class Locales {
     })
   }
 
-  detectOsLocale() {
-    let locale = this._getOsLocale()
+  detectOsLocale () {
+    const locale = this._getOsLocale()
 
-    let exist = this._checkIfLocaleFileExist(locale)
+    const exist = this._checkIfLocaleFileExist(locale)
 
     if (exist) {
       return locale
@@ -27,8 +27,8 @@ class Locales {
     return 'en'
   }
 
-  _getOsLocale() {
-    let locale
+  _getOsLocale () {
+    var locale
     try {
       locale = osLocale.sync({ spawn: false })
     } catch (err) {
@@ -38,13 +38,13 @@ class Locales {
     return locale
   }
 
-  _checkIfLocaleFileExist(locale) {
-    let json = fse.readJsonSync(path.join(__dirname, `${locale.substring(0, 2)}.json`), { throws: false })
+  _checkIfLocaleFileExist (locale) {
+    const json = fse.readJsonSync(path.join(__dirname, `${locale.substring(0, 2)}.json`), { throws: false })
 
     return json != null
   }
 
-  localized(key) {
+  localized (key) {
     return this.y18n.__(key)
   }
 
