@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const pkg = require('../package.json')
-const run = require('../src')
+const run = require('../lib')
 const chalk = require('chalk')
 const updateNotifier = require('update-notifier')
 

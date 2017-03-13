@@ -18,10 +18,10 @@
   },
   "files": [
     "bin",
-    "src"
+    "lib"
   ],
   "scripts": {
-    "test": "eslint src bin/docsify --fix"
+    "test": "eslint lib bin/docsify --fix"
   },
   "dependencies": {
     "chalk": "^1.1.0",
