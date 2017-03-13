@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict'
+
 const pkg = require('../package.json')
 const run = require('../lib')
 const chalk = require('chalk')
@@ -7,22 +9,25 @@ const updateNotifier = require('update-notifier')
 
 updateNotifier({ pkg: pkg }).notify()
 
+let Locales = require('./locales')
+const y18n = new Locales()
+
 require('yargonaut')
   .style('yellow', 'required')
   .helpStyle('green')
   .errorsStyle('red.bold')
 
 var argv = require('yargs')
-  .usage(chalk.bold('Usage: docsify <command> <path> [options]'))
+  .usage(chalk.bold(y18n.localized('usageDesc') + ': docsify <command> <path> [options]'))
   .command({
     command: 'init <path> [--local] [--theme vue]',
     alias: 'i',
-    desc: chalk.gray('Creates new docs'),
+    desc: chalk.gray(y18n.localized('commandInitDesc')),
     builder: (yargs) => yargs.options({
       'local': {
         alias: 'l',
         default: false,
-        desc: chalk.gray('Copy docsify files to local.'),
+        desc: chalk.gray(y18n.localized('commandInitOptionLocalDesc')),
         nargs: 0,
         requiresArg: false,
         type: 'boolean'
@@ -30,7 +35,7 @@ var argv = require('yargs')
       'theme': {
         alias: 't',
         default: 'vue',
-        desc: chalk.gray('Theme file to be used.'),
+        desc: chalk.gray(y18n.localized('commandInitOptionThemeDesc')),
         choices: ['vue', 'buble', 'dark', 'pure'],
         nargs: 1,
         requiresArg: true,
@@ -42,12 +47,12 @@ var argv = require('yargs')
   .command({
     command: 'serve <path> [--port 3000]',
     alias: 's',
-    desc: chalk.gray('Run local server to preview site.'),
+    desc: chalk.gray(y18n.localized('commandServeDesc')),
     builder: (yargs) => yargs.options({
       'port': {
         alias: 'p',
         default: 3000,
-        desc: chalk.gray('Listen port.'),
+        desc: chalk.gray(y18n.localized('commandServeOptionPortDesc')),
         nargs: 1,
         requiresArg: true,
         type: 'number'
@@ -59,15 +64,15 @@ var argv = require('yargs')
   .option('help', {
     alias: 'h',
     type: 'boolean',
-    desc: chalk.gray('Show help')
+    desc: chalk.gray(y18n.localized('optionHelpDesc'))
   })
   .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
   .option('version', {
     alias: 'v',
     type: 'boolean',
-    desc: chalk.gray('Show version number')
+    desc: chalk.gray(y18n.localized('optionVersionDesc'))
   })
-  .epilog(chalk.green('Documentation:') + '\n' +
+  .epilog(chalk.green(y18n.localized('epilogDesc')) + ':\n' +
           '  https://QingWei-Li.github.io/docsify\n' +
           '  https://QingWei-Li.github.io/docsify-cli\n')
   .argv

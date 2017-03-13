@@ -1,0 +1,11 @@
+{
+    "usageDesc": "Anwendung",
+    "commandInitDesc": "Erzeuge neue Dokumentation.",
+    "commandInitOptionLocalDesc": "Kopiere docsify Dateien in lokale Ordner.",
+    "commandInitOptionThemeDesc": "Zu verwendende Theme Dateien.",
+    "commandServeDesc": "Lasse lokalen Server zur Webseitenvorschau laufen.",
+    "commandServeOptionPortDesc": "Listen port.",
+    "optionHelpDesc": "Zeige Hilfe an",
+    "optionVersionDesc": "Zeige Versionsnummer an",
+    "epilogDesc": "Dokumentation"
+}
