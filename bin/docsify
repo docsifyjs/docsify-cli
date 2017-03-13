@@ -9,7 +9,7 @@ const updateNotifier = require('update-notifier')
 
 updateNotifier({ pkg: pkg }).notify()
 
-let Locales = require('./locales')
+const Locales = require('./locales')
 const y18n = new Locales()
 
 require('yargonaut')
