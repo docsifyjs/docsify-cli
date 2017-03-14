@@ -1,0 +1,11 @@
+{
+    "usageDesc": "Usage",
+    "commandInitDesc": "Creates new docs",
+    "commandInitOptionLocalDesc": "Copy docsify files to local.",
+    "commandInitOptionThemeDesc": "Theme file to be used.",
+    "commandServeDesc": "Run local server to preview site.",
+    "commandServeOptionPortDesc": "Listen port.",
+    "optionHelpDesc": "Show help",
+    "optionVersionDesc": "Show version number",
+    "epilogDesc": "Documentation"
+}
