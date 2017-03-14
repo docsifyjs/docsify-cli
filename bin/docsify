@@ -72,6 +72,7 @@ var yargs = require('yargs')
   .option('help', {
     alias: 'h',
     type: 'boolean',
+    default: true,
     desc: chalk.gray(y18n.localized('optionHelpDesc'))
   })
   .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
