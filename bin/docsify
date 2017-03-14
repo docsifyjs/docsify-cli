@@ -18,7 +18,7 @@ require('yargonaut')
   .errorsStyle('red.bold')
 
 var yargs = require('yargs')
-  .usage(chalk.bold(y18n.localized('usageDesc') + ': docsify <command> <path> [options]'))
+  .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
   .command({
     command: '*',
     desc: 'the default command',
@@ -30,12 +30,12 @@ var yargs = require('yargs')
   .command({
     command: 'init <path> [--local] [--theme vue]',
     alias: 'i',
-    desc: chalk.gray(y18n.localized('commandInitDesc')),
+    desc: chalk.gray(y18n.__('init')),
     builder: (yargs) => yargs.options({
       'local': {
         alias: 'l',
         default: false,
-        desc: chalk.gray(y18n.localized('commandInitOptionLocalDesc')),
+        desc: chalk.gray(y18n.__('init.local')),
         nargs: 0,
         requiresArg: false,
         type: 'boolean'
@@ -43,7 +43,7 @@ var yargs = require('yargs')
       'theme': {
         alias: 't',
         default: 'vue',
-        desc: chalk.gray(y18n.localized('commandInitOptionThemeDesc')),
+        desc: chalk.gray(y18n.__('init.theme')),
         choices: ['vue', 'buble', 'dark', 'pure'],
         nargs: 1,
         requiresArg: true,
@@ -55,12 +55,12 @@ var yargs = require('yargs')
   .command({
     command: 'serve <path> [--port 3000]',
     alias: 's',
-    desc: chalk.gray(y18n.localized('commandServeDesc')),
+    desc: chalk.gray(y18n.__('serve')),
     builder: (yargs) => yargs.options({
       'port': {
         alias: 'p',
         default: 3000,
-        desc: chalk.gray(y18n.localized('commandServeOptionPortDesc')),
+        desc: chalk.gray(y18n.__('serve.port')),
         nargs: 1,
         requiresArg: true,
         type: 'number'
@@ -73,15 +73,15 @@ var yargs = require('yargs')
     alias: 'h',
     type: 'boolean',
     default: true,
-    desc: chalk.gray(y18n.localized('optionHelpDesc'))
+    desc: chalk.gray(y18n.__('help'))
   })
   .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
   .option('version', {
     alias: 'v',
     type: 'boolean',
-    desc: chalk.gray(y18n.localized('optionVersionDesc'))
+    desc: chalk.gray(y18n.__('version'))
   })
-  .epilog(chalk.green(y18n.localized('epilogDesc')) + ':\n' +
+  .epilog(chalk.green(y18n.__('epilog')) + ':\n' +
           '  https://QingWei-Li.github.io/docsify\n' +
           '  https://QingWei-Li.github.io/docsify-cli\n')
   .argv

@@ -1,11 +1,11 @@
 {
-    "usageDesc": "例子",
-    "commandInitDesc": "创建 docs",
-    "commandInitOptionLocalDesc": "拷贝 docsify 到本地",
-    "commandInitOptionThemeDesc": "选择主题",
-    "commandServeDesc": "本地预览",
-    "commandServeOptionPortDesc": "端口",
-    "optionHelpDesc": "帮助",
-    "optionVersionDesc": "当先版本号",
-    "epilogDesc": "文档"
+    "usage": "例子",
+    "init": "创建 docs",
+    "init.local": "拷贝 docsify 到本地",
+    "init.theme": "选择主题",
+    "serve": "本地预览",
+    "serve.port": "端口",
+    "help": "帮助",
+    "version": "当先版本号",
+    "epilog": "文档"
 }

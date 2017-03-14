@@ -1,11 +1,11 @@
 {
-    "usageDesc": "Usage",
-    "commandInitDesc": "Creates new docs",
-    "commandInitOptionLocalDesc": "Copy docsify files to local.",
-    "commandInitOptionThemeDesc": "Theme file to be used.",
-    "commandServeDesc": "Run local server to preview site.",
-    "commandServeOptionPortDesc": "Listen port.",
-    "optionHelpDesc": "Show help",
-    "optionVersionDesc": "Show version number",
-    "epilogDesc": "Documentation"
+    "usage": "Usage",
+    "init": "Creates new docs",
+    "init.local": "Copy docsify files to local.",
+    "init.theme": "Theme file to be used.",
+    "serve": "Run local server to preview site.",
+    "serve.port": "Listen port.",
+    "help": "Show help",
+    "version": "Show version number",
+    "epilog": "Documentation"
 }
