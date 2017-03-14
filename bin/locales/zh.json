@@ -1,0 +1,11 @@
+{
+    "usageDesc": "例子",
+    "commandInitDesc": "创建 docs",
+    "commandInitOptionLocalDesc": "拷贝 docsify 到本地",
+    "commandInitOptionThemeDesc": "选择主题",
+    "commandServeDesc": "本地预览",
+    "commandServeOptionPortDesc": "端口",
+    "optionHelpDesc": "帮助",
+    "optionVersionDesc": "当先版本号",
+    "epilogDesc": "文档"
+}
