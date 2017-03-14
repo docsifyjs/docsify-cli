@@ -20,6 +20,14 @@ require('yargonaut')
 var argv = require('yargs')
   .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
   .command({
+    command: '*',
+    desc: 'the default command',
+    builder: () => {},
+    handler: (argv) => {
+      argv.showHelp()
+    }
+  })
+  .command({
     command: 'init <path> [--local] [--theme vue]',
     alias: 'i',
     desc: chalk.gray(y18n.__('init')),
