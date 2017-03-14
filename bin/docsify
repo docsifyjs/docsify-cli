@@ -17,21 +17,13 @@ require('yargonaut')
   .helpStyle('green')
   .errorsStyle('red.bold')
 
-var yargs = require('yargs')
+var argv = require('yargs')
   .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
-  .command({
-    command: '*',
-    desc: 'the default command',
-    builder: () => {},
-    handler: (yargs) => {
-      yargs.help()
-    }
-  })
   .command({
     command: 'init <path> [--local] [--theme vue]',
     alias: 'i',
     desc: chalk.gray(y18n.__('init')),
-    builder: (yargs) => yargs.options({
+    builder: (argv) => argv.options({
       'local': {
         alias: 'l',
         default: false,
@@ -56,7 +48,7 @@ var yargs = require('yargs')
     command: 'serve <path> [--port 3000]',
     alias: 's',
     desc: chalk.gray(y18n.__('serve')),
-    builder: (yargs) => yargs.options({
+    builder: (argv) => argv.options({
       'port': {
         alias: 'p',
         default: 3000,
