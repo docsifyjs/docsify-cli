@@ -4,8 +4,8 @@
     "init.local": "拷贝 docsify 到本地",
     "init.theme": "选择主题",
     "serve": "本地预览",
-    "serve.port": "端口",
+    "serve.port": "设置端口",
     "help": "帮助",
-    "version": "当先版本号",
+    "version": "当前版本号",
     "epilog": "文档"
 }
