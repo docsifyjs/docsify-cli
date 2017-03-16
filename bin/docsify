@@ -20,7 +20,7 @@ require('yargonaut')
 var argv = require('yargs')
   .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
   .command({
-    command: 'init <path> [--local] [--theme vue]',
+    command: 'init <path> [--theme vue]',
     alias: 'i',
     desc: chalk.gray(y18n.__('init')),
     builder: (argv) => argv.options({
