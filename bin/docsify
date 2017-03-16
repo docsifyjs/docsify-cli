@@ -52,7 +52,7 @@ var argv = require('yargs')
       'disable-auto-open': {
         alias: 'd',
         default: false,
-        desc: chalk.gray(y18n.__('serve.disable-auto-open')),
+        desc: chalk.gray(y18n.__('serve.disableAutoOpen')),
         nargs: 0,
         requiresArg: false,
         type: 'boolean'
@@ -66,7 +66,7 @@ var argv = require('yargs')
         type: 'number'
       }
     }),
-    handler: (argv) => run.serve(argv.path, argv.port, argv.disable-auto-open)
+    handler: (argv) => run.serve(argv.path, argv.port, argv.disableAutoOpen)
   })
   .help()
   .option('help', {
