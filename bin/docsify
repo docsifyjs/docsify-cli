@@ -42,7 +42,7 @@ var argv = require('yargs')
         type: 'string'
       }
     }),
-    handler: (argv) => run.init(argv)
+    handler: (argv) => run.init(argv.path, argv.local, argv.theme)
   })
   .command({
     command: 'serve <path> [--open false] [--port 3000]',
@@ -66,7 +66,7 @@ var argv = require('yargs')
         type: 'number'
       }
     }),
-    handler: (argv) => run.serve(argv)
+    handler: (argv) => run.serve(argv.path, argv.open, argv.port)
   })
   .help()
   .option('help', {
