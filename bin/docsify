@@ -42,17 +42,17 @@ var argv = require('yargs')
         type: 'string'
       }
     }),
-    handler: (argv) => run.init(argv.path, argv.local, argv.theme)
+    handler: (argv) => run.init(argv)
   })
   .command({
-    command: 'serve <path> [--disable-auto-open false] [--port 3000]',
+    command: 'serve <path> [--open false] [--port 3000]',
     alias: 's',
     desc: chalk.gray(y18n.__('serve')),
     builder: (argv) => argv.options({
-      'disable-auto-open': {
-        alias: 'd',
+      'open': {
+        alias: 'o',
         default: false,
-        desc: chalk.gray(y18n.__('serve.disableAutoOpen')),
+        desc: chalk.gray(y18n.__('serve.open')),
         nargs: 0,
         requiresArg: false,
         type: 'boolean'
@@ -66,7 +66,7 @@ var argv = require('yargs')
         type: 'number'
       }
     }),
-    handler: (argv) => run.serve(argv.path, argv.port, argv.disableAutoOpen)
+    handler: (argv) => run.serve(argv)
   })
   .help()
   .option('help', {

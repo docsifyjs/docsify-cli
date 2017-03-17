@@ -4,7 +4,7 @@
     "init.local": "Kopiere docsify Dateien in lokale Ordner.",
     "init.theme": "Zu verwendende Theme Dateien.",
     "serve": "Lasse lokalen Server zur Webseitenvorschau laufen.",
-    "serve.disableAutoOpen": "Nicht automatisch die Dokumentation im Standardbrowser öffnen.",
+    "serve.open": "Dokumentation im Standardbrowser öffnen.",
     "serve.port": "Listen port.",
     "help": "Zeige Hilfe an",
     "version": "Zeige Versionsnummer an",

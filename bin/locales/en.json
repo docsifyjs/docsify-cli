@@ -4,7 +4,7 @@
     "init.local": "Copy docsify files to local.",
     "init.theme": "Theme file to be used.",
     "serve": "Run local server to preview site.",
-    "serve.disableAutoOpen": "Don't automatically open docs in default browser.",
+    "serve.open": "Open docs in default browser.",
     "serve.port": "Listen port.",
     "help": "Show help",
     "version": "Show version number",
