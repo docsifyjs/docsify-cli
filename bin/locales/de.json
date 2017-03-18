@@ -4,10 +4,10 @@
     "group.globaloptions": "Globale Optionen",
     "help": "Zeige Hilfe an",
     "init": "Erzeuge neue Dokumentation.",
-    "init.local": "Kopiere docsify Dateien in lokale Ordner.",
+    "init.local": "Kopiere docsify Dateien in lokale Ordner. Um explizit --local auf false zu setzen, kannst du --no-local verwenden.",
     "init.theme": "Zu verwendende Theme Dateien.",
     "serve": "Lasse lokalen Server zur Webseitenvorschau laufen.",
-    "serve.open": "Dokumentation im Standardbrowser öffnen.",
+    "serve.open": "Dokumentation im Standardbrowser öffnen. Um explizit --open auf false zu setzen, kannst du --no-open verwenden.",
     "serve.port": "Listen port.",
     "usage": "Anwendung",
     "version": "Zeige Versionsnummer an"

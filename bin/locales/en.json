@@ -4,10 +4,10 @@
     "group.globaloptions": "Global Options",
     "help": "Show help",
     "init": "Creates new docs",
-    "init.local": "Copy docsify files to local.",
+    "init.local": "Copy docsify files to local. To explicitly set --local to false you may use --no-local.",
     "init.theme": "Theme file to be used.",
     "serve": "Run local server to preview site.",
-    "serve.open": "Open docs in default browser.",
+    "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
     "serve.port": "Listen port.",
     "usage": "Usage",
     "version": "Show version number"
