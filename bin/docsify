@@ -18,7 +18,7 @@ require('yargonaut')
   .errorsStyle('red.bold')
 
 var argv = require('yargs')
-  .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
+  .usage(chalk.bold(y18n.__('usage') + ': docsify <init|serve> <path> [options]'))
   .command({
     command: 'init <path> [--local false] [--theme vue]',
     alias: 'i',
