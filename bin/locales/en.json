@@ -1,13 +1,14 @@
 {
-    "usage": "Usage",
+    "completion": "Print shell completion script",
+    "epilog": "Documentation",
     "group.globaloptions": "Global Options",
+    "help": "Show help",
     "init": "Creates new docs",
     "init.local": "Copy docsify files to local.",
     "init.theme": "Theme file to be used.",
     "serve": "Run local server to preview site.",
     "serve.open": "Open docs in default browser.",
     "serve.port": "Listen port.",
-    "help": "Show help",
-    "version": "Show version number",
-    "epilog": "Documentation"
+    "usage": "Usage",
+    "version": "Show version number"
 }

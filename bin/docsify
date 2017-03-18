@@ -68,12 +68,14 @@ var argv = require('yargs')
     }),
     handler: (argv) => run.serve(argv.path, argv.open, argv.port)
   })
-  .completion('completion', function (current, argv, done) {
-    return new Promise(function (resolve, reject) {
-      setTimeout(function () {
-        resolve(['init', 'serve'])
-      }, 10)
-    })
+  .command({
+    command: 'completion',
+    alias: 'c',
+    desc: chalk.gray(y18n.__('completion')),
+    builder: {},
+    handler: (argv) => {
+      yargs.showCompletionScript().argv
+    }
   })
   .help()
   .option('help', {
