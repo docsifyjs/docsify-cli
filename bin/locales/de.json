@@ -1,5 +1,6 @@
 {
     "usage": "Anwendung",
+    "group.globaloptions": "Globale Optionen",
     "init": "Erzeuge neue Dokumentation.",
     "init.local": "Kopiere docsify Dateien in lokale Ordner.",
     "init.theme": "Zu verwendende Theme Dateien.",

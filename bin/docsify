@@ -79,13 +79,15 @@ var argv = require('yargs')
   .option('help', {
     alias: 'h',
     type: 'boolean',
-    desc: chalk.gray(y18n.__('help'))
+    desc: chalk.gray(y18n.__('help')),
+    group: chalk.green(y18n.__('group.globaloptions'))
   })
   .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
   .option('version', {
     alias: 'v',
     type: 'boolean',
-    desc: chalk.gray(y18n.__('version'))
+    desc: chalk.gray(y18n.__('version')),
+    group: chalk.green(y18n.__('group.globaloptions'))
   })
   .epilog(chalk.green(y18n.__('epilog')) + ':\n' +
           '  https://QingWei-Li.github.io/docsify\n' +

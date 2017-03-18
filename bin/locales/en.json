@@ -1,5 +1,6 @@
 {
     "usage": "Usage",
+    "group.globaloptions": "Global Options",
     "init": "Creates new docs",
     "init.local": "Copy docsify files to local.",
     "init.theme": "Theme file to be used.",
