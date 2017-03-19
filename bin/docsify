@@ -18,7 +18,7 @@ require('yargonaut')
   .errorsStyle('red.bold')
 
 var argv = require('yargs')
-  .usage(chalk.bold(y18n.__('usage') + ': docsify <command> <path> [options]'))
+  .usage(chalk.bold(y18n.__('usage') + ': docsify <init|serve> <path> [options]'))
   .command({
     command: 'init <path> [--local false] [--theme vue]',
     alias: 'i',
@@ -68,17 +68,28 @@ var argv = require('yargs')
     }),
     handler: (argv) => run.serve(argv.path, argv.open, argv.port)
   })
+  .command({
+    command: 'completion',
+    alias: 'c',
+    desc: chalk.gray(y18n.__('completion')),
+    builder: {},
+    handler: (argv) => {
+      argv.showCompletionScript()
+    }
+  })
   .help()
   .option('help', {
     alias: 'h',
     type: 'boolean',
-    desc: chalk.gray(y18n.__('help'))
+    desc: chalk.gray(y18n.__('help')),
+    group: chalk.green(y18n.__('group.globaloptions'))
   })
   .version('\ndocsify-cli version:\n  ' + pkg.version + '\n')
   .option('version', {
     alias: 'v',
     type: 'boolean',
-    desc: chalk.gray(y18n.__('version'))
+    desc: chalk.gray(y18n.__('version')),
+    group: chalk.green(y18n.__('group.globaloptions'))
   })
   .epilog(chalk.green(y18n.__('epilog')) + ':\n' +
           '  https://QingWei-Li.github.io/docsify\n' +
