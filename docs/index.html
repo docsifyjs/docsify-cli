@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>docsify cli - A magical documentation generator.</title>
-  <meta name="description" content="docsify cli - A magical documentation generator.">
+  <title>docsify-cli - A magical documentation generator.</title>
+  <meta name="description" content="A magical documentation generator.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/docsify/latest/lib/themes/buble.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
 </body>
-<script
-  data-router
-  src="//cdn.jsdelivr.net/docsify/latest/lib/docsify.min.js"
-  data-homepage="//raw.githubusercontent.com/QingWei-Li/docsify-cli/master/README.md"
-  data-repo="QingWei-Li/docsify-cli"></script>
+<script>
+  window.$docsify = {
+    name: 'docsify-cli',
+    repo: 'https://github.com/QingWei-Li/docsify-cli'
+  }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </html>
