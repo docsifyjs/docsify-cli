@@ -1,4 +1,5 @@
 {
+    "epilog": "Dokumentation\n\thttps://QingWei-Li.github.io/docsify\n\thttps://QingWei-Li.github.io/docsify-cli\n\nEntwicklung:\n\t\"npm install\"\n\t\"gulp\" (für eine Liste verfügbarer gulp tasks)\n",
     "group.globaloptions": "Globale Optionen",
     "gulp.bump": "Erhöhe die SemVer patch des Pakets.",
     "gulp.bump.major": "Erhöhe die SemVer major des Pakets.",
