@@ -9,7 +9,7 @@ const updateNotifier = require('update-notifier')
 
 updateNotifier({ pkg: pkg }).notify()
 
-const Locales = require('./locales')
+const Locales = require('../tools/locales')
 const y18n = new Locales()
 
 require('yargonaut')
@@ -17,13 +17,13 @@ require('yargonaut')
   .helpStyle('green')
   .errorsStyle('red.bold')
 
-var argv = require('yargs')
+var yargs = require('yargs')
   .usage(chalk.bold(y18n.__('usage') + ': docsify <init|serve> <path> [options]'))
   .command({
     command: 'init <path> [--local false] [--theme vue]',
     alias: 'i',
     desc: chalk.gray(y18n.__('init')),
-    builder: (argv) => argv.options({
+    builder: (yargs) => yargs.options({
       'local': {
         alias: 'l',
         default: false,
@@ -48,7 +48,7 @@ var argv = require('yargs')
     command: 'serve <path> [--open false] [--port 3000]',
     alias: 's',
     desc: chalk.gray(y18n.__('serve')),
-    builder: (argv) => argv.options({
+    builder: (yargs) => yargs.options({
       'open': {
         alias: 'o',
         default: false,
@@ -68,15 +68,6 @@ var argv = require('yargs')
     }),
     handler: (argv) => run.serve(argv.path, argv.open, argv.port)
   })
-  .command({
-    command: 'completion',
-    alias: 'c',
-    desc: chalk.gray(y18n.__('completion')),
-    builder: {},
-    handler: (argv) => {
-      argv.showCompletionScript()
-    }
-  })
   .help()
   .option('help', {
     alias: 'h',
@@ -91,7 +82,5 @@ var argv = require('yargs')
     desc: chalk.gray(y18n.__('version')),
     group: chalk.green(y18n.__('group.globaloptions'))
   })
-  .epilog(chalk.green(y18n.__('epilog')) + ':\n' +
-          '  https://QingWei-Li.github.io/docsify\n' +
-          '  https://QingWei-Li.github.io/docsify-cli\n')
+  .epilog(chalk.gray(y18n.__('epilog')))
   .argv

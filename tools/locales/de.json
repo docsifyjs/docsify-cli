@@ -1,0 +1,21 @@
+{
+    "epilog": "Dokumentation\n\thttps://QingWei-Li.github.io/docsify\n\thttps://QingWei-Li.github.io/docsify-cli\n\nEntwicklung:\n\t\"npm install\"\n\t\"gulp\" (für eine Liste verfügbarer gulp tasks)\n",
+    "group.globaloptions": "Globale Optionen",
+    "gulp.bump": "Erhöhe die SemVer patch des Pakets.",
+    "gulp.bump.major": "Erhöhe die SemVer major des Pakets.",
+    "gulp.bump.minor": "Erhöhe die SemVer minor des Pakets.",
+    "gulp.bump.patch": "Erhöhe die SemVer patch des Pakets.",
+    "gulp.bump.prerelease": "Erhöhe die SemVer prerelease des Pakets.",
+    "gulp.changelog": "Generiere den CHANGELOG.",
+    "gulp.lint": "Führe eslint aus.",
+    "gulp.release": "Veröffentliche auf Github.",
+    "help": "Zeige Hilfe an",
+    "init": "Erzeuge neue Dokumentation.",
+    "init.local": "Kopiere docsify Dateien in lokale Ordner. Um explizit --local auf false zu setzen, kannst du --no-local verwenden.",
+    "init.theme": "Zu verwendende Theme Dateien.",
+    "serve": "Lasse lokalen Server zur Webseitenvorschau laufen.",
+    "serve.open": "Dokumentation im Standardbrowser öffnen. Um explizit --open auf false zu setzen, kannst du --no-open verwenden.",
+    "serve.port": "Listen port.",
+    "usage": "Anwendung",
+    "version": "Zeige Versionsnummer an"
+}

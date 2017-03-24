@@ -2,3 +2,5 @@
 .eslintrc
 .gitignore
 .travis.yml
+tools/gulp-tasks/
+gulpfile.babel.js
