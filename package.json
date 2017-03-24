@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 6",
-    "npm": ">= 4"
+    "node": ">= 4",
+    "npm": ">= 3"
   },
   "main": "bin/docsify",
   "bin": {
