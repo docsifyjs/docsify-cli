@@ -16,13 +16,12 @@ class Locales {
 
   detectLocale () {
     const yargs = require('yargs')
-      .detectLocale(true)
 
     const locale = yargs.locale()
 
-    const exist = this._existsLocaleFile(locale)
+    const exists = this._existsLocaleFile(locale)
 
-    if (exist) {
+    if (exists) {
       return locale
     }
 
@@ -39,8 +38,8 @@ class Locales {
     return this.y18n.__(str)
   }
 
-  __n (singularString, pluralString, count) {
-    return this.y18n.__n(singularString, pluralString, count)
+  __n (singular, plural, count) {
+    return this.y18n.__n(singular, plural, count)
   }
 
 }

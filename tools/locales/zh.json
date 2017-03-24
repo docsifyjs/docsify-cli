@@ -1,6 +1,4 @@
 {
-    "completion": "显示完整信息",
-    "epilog": "文档",
     "group.globaloptions": "全局选项",
     "help": "帮助",
     "init": "创建 docs",

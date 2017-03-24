@@ -2,7 +2,11 @@
   "name": "docsify-cli",
   "version": "3.2.5",
   "description": "A magical documentation generator.",
-  "author": "qingwei-li <cinwell.li@gmail.com> (https://github.com/QingWei-Li)",
+  "author": {
+    "name": "qingwei-li",
+    "email": "cinwell.li@gmail.com",
+    "url": "https://github.com/QingWei-Li"
+  },
   "homepage": "https://github.com/QingWei-Li/docsify-cli#readme",
   "repository": {
     "type": "git",
@@ -10,7 +14,8 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6",
+    "npm": ">= 4"
   },
   "main": "bin/docsify",
   "bin": {
@@ -18,30 +23,45 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "tools/locales"
   ],
-  "scripts": {
-    "test": "eslint lib bin/docsify --fix"
-  },
   "dependencies": {
-    "chalk": "^1.1.0",
-    "connect": "^3.5.0",
+    "chalk": "^1.1.3",
+    "connect": "^3.6.0",
     "connect-livereload": "^0.6.0",
-    "cp-file": "^4.1.0",
-    "docsify": ">=2",
-    "fs-extra": "^2.0.0",
-    "livereload": "^0.6.0",
+    "cp-file": "^4.1.1",
+    "docsify": ">=3",
+    "fs-extra": "^2.1.2",
+    "livereload": "^0.6.2",
     "open": "^0.0.5",
-    "serve-static": "^1.11.1",
-    "update-notifier": "^1.0.3",
+    "serve-static": "^1.12.1",
+    "update-notifier": "^2.1.0",
     "y18n": "^3.2.1",
     "yargonaut": "^1.1.2",
-    "yargs": "^6.4.0"
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
-    "eslint": "^3.10.2",
-    "eslint-config-vue": "^2.0.1",
-    "eslint-plugin-vue": "^1.0.0"
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-root-import": "^4.1.3",
+    "chalk": "^1.1.3",
+    "conventional-github-releaser": "^1.1.2",
+    "cors": "^2.8.1",
+    "eslint": "^3.18.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-vue": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.4.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-conventional-changelog": "^1.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-help": "^1.6.1",
+    "gulp-if": "^2.0.1",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-stats": "^0.0.4",
+    "run-sequence": "^1.2.2",
+    "yargs": "^7.0.2"
   },
   "keywords": [
     "docsify",

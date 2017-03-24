@@ -1,0 +1,15 @@
+env:
+  node: true
+extends: 'vue'
+rules:
+  indent:
+    - warn
+    - 2
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  no-unused-vars:
+    - off

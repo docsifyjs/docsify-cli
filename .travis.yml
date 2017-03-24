@@ -4,5 +4,11 @@ node_js: stable
 os:
   - linux
   - osx
+cache:
+  directories:
+    - ./node_modules
 install:
-  - npm install --no-optional
+  - npm install
+  - npm install -g gulp
+script:
+  - gulp lint
