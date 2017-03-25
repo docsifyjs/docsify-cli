@@ -13,11 +13,15 @@
 
 * [docsify](https://github.com/QingWei-Li/docsify)
 
-## Screenshots
+## Screencast
 
-![](https://cloud.githubusercontent.com/assets/7565692/20603335/10bf80a0-b29c-11e6-93bb-5c3187f76edd.gif)
+![Screencast](https://raw.githubusercontent.com/QingWei-Li/docsify-cli/master/media/screencast.gif)
+
+> Running a server on `localhost` with live-reload.
 
 ## Installation
+
+Install `docsify-cli` via `npm` or `yarn` globally.
 
 ```shell
 npm i docsify-cli -g
@@ -26,30 +30,49 @@ npm i docsify-cli -g
 
 ## Usage
 
-### init
+### `init` command
 
-Creates the docs, by default in the current directory.
-
-```shell
-docsify init [path]
-```
-
-#### options
-
-| Short | Long | Description |
-|---|---|---|
-| `-l` | `--local` | Copy `docsify` to docs path, default use `unpkg.com` cdn |
-| `-t` | `--theme` | Choose theme, default `vue.css` |
-
-### serve - run serve to preview
+Use `init` to generate your docs.
 
 ```shell
-docsify serve [path]
+docsify init <path> [--local false] [--theme vue]
+
+# docsify i <path> [--local false] [--theme vue]
 ```
 
-| Short | Long | Description |
-|---|---|---|
-| `-p` | `--port` | Listen port, defaults to 3000. |
+`<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
+
+* `--local` option:
+  * Shorthand: `-l`
+  * Type: boolean
+  * Default: `false`
+  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
+* `--theme` option:
+  * Shorthand: `-t`
+  * Type: string
+  * Default: `vue`
+  * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+
+### `serve` command
+
+Run a server on `localhost` with livereload.
+
+```shell
+docsify serve <path> [--open false] [--port 3000]
+
+# docsify s <path> [--open false] [--port 3000]
+```
+
+* `--open` option:
+  * Shorthand: `-o`
+  * Type: boolean
+  * Default: `false`
+  * Description: Open the docs in the default browser, defaults to `false`. To explicitly set this option to `false` use `--no-open`.
+* `--port` option:
+  * Shorthand: `-p`
+  * Type: number
+  * Default: `3000`
+  * Description: Choose a listen port, defaults to `3000`.
 
 ## License
 

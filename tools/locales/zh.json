@@ -1,5 +1,5 @@
 {
-    "epilog": "文档地址\n\thttps://QingWei-Li.github.io/docsify\n\thttps://QingWei-Li.github.io/docsify-cli\n\nDevelopment:\n\t\"npm install\"\n\t\"gulp\" (for a list of available gulp tasks)\n",
+    "epilog": "文档地址:\n  https://QingWei-Li.github.io/docsify\n  https://QingWei-Li.github.io/docsify-cli\n\n开发:\n  https://github.com/QingWei-Li/docsify-cli/blob/master/CONTRIBUTING.md\n",
     "group.globaloptions": "全局选项",
     "gulp.bump": "Bumps the package's SemVer patch.",
     "gulp.bump.major": "Bumps the package's SemVer major.",
