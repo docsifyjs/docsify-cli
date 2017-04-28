@@ -19,19 +19,17 @@ class Locales {
 
     const locale = yargs.locale()
 
-    const exists = this._existsLocaleFile(locale)
-
-    if (exists) {
-      return locale
+    try {
+      this._existsLocaleFile(locale)
+    } catch (e) {
+      return 'en'
     }
 
-    return 'en'
+    return locale
   }
 
   _existsLocaleFile (locale) {
-    const json = fse.readJsonSync(path.join(__dirname, `${locale.substring(0, 2)}.json`), { throws: false })
-
-    return json != null
+    return fse.readJsonSync(path.join(__dirname, `${locale.substring(0, 2)}.json`))
   }
 
   __ (str) {
