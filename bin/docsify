@@ -68,6 +68,29 @@ var yargs = require('yargs')
     }),
     handler: (argv) => run.serve(argv.path, argv.open, argv.port)
   })
+  .command({
+    command: 'start <path>',
+    desc: chalk.gray(y18n.__('start')),
+    builder: (yargs) => yargs.options({
+      'config': {
+        alias: 'c',
+        default: false,
+        desc: chalk.gray(y18n.__('start.config')),
+        nargs: 0,
+        requiresArg: false,
+        type: 'string'
+      },
+      'port': {
+        alias: 'p',
+        default: 4000,
+        desc: chalk.gray(y18n.__('start.port')),
+        nargs: 1,
+        requiresArg: true,
+        type: 'number'
+      }
+    }),
+    handler: (argv) => run.start(argv.path, argv.config, argv.port)
+  })
   .help()
   .option('help', {
     alias: 'h',

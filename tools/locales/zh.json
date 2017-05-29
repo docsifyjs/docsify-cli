@@ -10,6 +10,7 @@
     "gulp.lint": "Runs eslint.",
     "gulp.release": "Releases on Github.",
     "help": "帮助",
+    "start": "Server for SSR",
     "init": "创建 docs",
     "init.local": "拷贝 docsify 到本地",
     "init.theme": "选择主题",
