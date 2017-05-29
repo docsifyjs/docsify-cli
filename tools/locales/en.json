@@ -11,6 +11,7 @@
     "gulp.release": "Releases on Github.",
     "help": "Show help",
     "init": "Creates new docs",
+    "start": "Server for SSR",
     "init.local": "Copy docsify files to local. To explicitly set --local to false you may use --no-local.",
     "init.theme": "Theme file to be used.",
     "serve": "Run local server to preview site.",
