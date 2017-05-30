@@ -32,7 +32,7 @@
     "connect-livereload": "^0.6.0",
     "cp-file": "^4.1.1",
     "docsify": ">=3",
-    "docsify-server-renderer": "^4.1.2",
+    "docsify-server-renderer": "^4.1.3",
     "fs-extra": "^2.1.2",
     "livereload": "^0.6.2",
     "open": "^0.0.5",
