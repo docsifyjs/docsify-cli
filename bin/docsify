@@ -45,7 +45,7 @@ var yargs = require('yargs')
     handler: (argv) => run.init(argv.path, argv.local, argv.theme)
   })
   .command({
-    command: 'serve <path>',
+    command: 'serve [path]',
     alias: 's',
     desc: chalk.gray(y18n.__('serve')),
     builder: (yargs) => yargs.options({
