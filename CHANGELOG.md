@@ -1,3 +1,138 @@
+<a name="4.1.9"></a>
+## [4.1.9](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.8...v4.1.9) (2017-07-12)
+
+
+### Performance Improvements
+
+* **serve:** exclude node_modules from livereload ([#17](https://github.com/QingWei-Li/docsify-cli/issues/17)) ([3f488d0](https://github.com/QingWei-Li/docsify-cli/commit/3f488d0))
+
+
+
+<a name="4.1.8"></a>
+## [4.1.8](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.7...v4.1.8) (2017-05-31)
+
+
+
+<a name="4.1.7"></a>
+## [4.1.7](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.6...v4.1.7) (2017-05-30)
+
+
+### Bug Fixes
+
+* **ssr:** clean files ([8e81b1a](https://github.com/QingWei-Li/docsify-cli/commit/8e81b1a))
+
+
+
+<a name="4.1.6"></a>
+## [4.1.6](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.5...v4.1.6) (2017-05-30)
+
+
+### Bug Fixes
+
+* **ssr:** add debug ([653f24f](https://github.com/QingWei-Li/docsify-cli/commit/653f24f))
+
+
+
+<a name="4.1.5"></a>
+## [4.1.5](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.4...v4.1.5) (2017-05-30)
+
+
+### Bug Fixes
+
+* **ssr:** missing  package ([86e6511](https://github.com/QingWei-Li/docsify-cli/commit/86e6511))
+
+
+
+<a name="4.1.4"></a>
+## [4.1.4](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.3...v4.1.4) (2017-05-30)
+
+
+### Bug Fixes
+
+* **ssr:** file path ([924a6cf](https://github.com/QingWei-Li/docsify-cli/commit/924a6cf))
+
+
+
+<a name="4.1.3"></a>
+## [4.1.3](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.2...v4.1.3) (2017-05-30)
+
+
+### Bug Fixes
+
+* update babel config ([49dbfe6](https://github.com/QingWei-Li/docsify-cli/commit/49dbfe6))
+
+
+
+<a name="4.1.2"></a>
+## [4.1.2](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.1...v4.1.2) (2017-05-30)
+
+
+### Bug Fixes
+
+* update babel config ([7095a0a](https://github.com/QingWei-Li/docsify-cli/commit/7095a0a))
+
+
+
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.0...v4.1.1) (2017-05-30)
+
+
+### Bug Fixes
+
+* update docsify-server-renderer ([ce7833e](https://github.com/QingWei-Li/docsify-cli/commit/ce7833e))
+
+
+
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/QingWei-Li/docsify-cli/compare/v4.0.2...v4.1.0) (2017-05-30)
+
+
+### Bug Fixes
+
+* update docsify-server-renderer ([7f56467](https://github.com/QingWei-Li/docsify-cli/commit/7f56467))
+
+
+### Features
+
+* test history mode ([f898a01](https://github.com/QingWei-Li/docsify-cli/commit/f898a01))
+
+
+
+<a name="4.0.2"></a>
+## [4.0.2](https://github.com/QingWei-Li/docsify-cli/compare/v4.0.1...v4.0.2) (2017-05-29)
+
+
+### Bug Fixes
+
+* remove context ([8b3679f](https://github.com/QingWei-Li/docsify-cli/commit/8b3679f))
+
+
+
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/QingWei-Li/docsify-cli/compare/v4.0.0...v4.0.1) (2017-05-29)
+
+
+### Bug Fixes
+
+* path => context ([d83fa69](https://github.com/QingWei-Li/docsify-cli/commit/d83fa69))
+
+
+
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/QingWei-Li/docsify-cli/compare/v3.3.2...v4.0.0) (2017-05-29)
+
+
+### Features
+
+* add start command ([#14](https://github.com/QingWei-Li/docsify-cli/issues/14)) ([feefcce](https://github.com/QingWei-Li/docsify-cli/commit/feefcce))
+
+
+
+<a name="3.3.2"></a>
+## [3.3.2](https://github.com/QingWei-Li/docsify-cli/compare/v3.3.1...v3.3.2) (2017-04-28)
+
+
+
 <a name="3.3.1"></a>
 ## [3.3.1](https://github.com/QingWei-Li/docsify-cli/compare/v3.3.0...v3.3.1) (2017-03-26)
 
