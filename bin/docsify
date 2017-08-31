@@ -64,9 +64,17 @@ var yargs = require('yargs')
         nargs: 1,
         requiresArg: true,
         type: 'number'
+      },
+      'livereload-port': {
+        alias: 'P',
+        default: 35729,
+        desc: chalk.gray(y18n.__('livereload.port')),
+        nargs: 1,
+        requiresArg: true,
+        type: 'number'
       }
     }),
-    handler: (argv) => run.serve(argv.path, argv.open, argv.port)
+    handler: (argv) => run.serve(argv.path, argv.open, argv.port, argv.P)
   })
   .command({
     command: 'start <path>',
