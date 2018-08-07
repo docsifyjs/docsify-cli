@@ -2,7 +2,7 @@
   * [Android - SSR(R) 客户端](a/az)
   * [IOS - Shadowsocket(需要购买)](a/ios)
   * [Windows - ShadowsocksR 客户端](a/win)
-  * [Mac - ShadowsocksX-NG-R8](mac/)
+  * [Mac - ShadowsocksX-NG-R8](a/mac)
   * [Windows - 游戏SSTap](a/tap)
 * <h4>其他信息</h4>
   * [用户协议](a/tos)
