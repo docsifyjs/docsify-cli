@@ -1,79 +1,16 @@
-# docsify-cli
+# GREATy Documents/用户手册
 
-[![Build Status master branch](https://img.shields.io/travis/QingWei-Li/docsify-cli/master.svg?style=flat-square)](https://travis-ci.org/QingWei-Li/docsify-cli)
-[![License](https://img.shields.io/github/license/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/blob/master/LICENSE)
-[![Github tag](https://img.shields.io/github/tag/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/tags)
-[![npm version](https://img.shields.io/npm/v/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
-[![npm total downloads](https://img.shields.io/npm/dt/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
-[![npm total monthly](https://img.shields.io/npm/dm/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
+### 重要
 
-> 🖌 docsify cli - A magical documentation generator.
+!> 本文档归“C · yue”所有,请勿调用。
 
-## Links
+!> 所有文档都存在生命周期
 
-* [docsify](https://github.com/QingWei-Li/docsify)
+这里是GREATy的用户文档。我们在此为阁下准备了关于GREATy的详细介绍。您可以在这里找到各类有用信息。
 
-## Screencast
+1. 由于大多数软件会进行不断的更新，GREATy的网站布局，用户界面，节点信息会不断进行优化，可能在一段周期后文档描述会与事实不相符。
 
-![Screencast](https://raw.githubusercontent.com/QingWei-Li/docsify-cli/master/media/screencast.gif)
+?> 如果您遇到任何问题，请立即与“[客服](https://t.me/walsm "客服")”或添加官方“[TG群](https://t.me/sudussr "TG群")”进行交谈。(需要翻)
 
-> Running a server on `localhost` with live-reload.
 
-## Installation
-
-Install `docsify-cli` via `npm` or `yarn` globally.
-
-```shell
-npm i docsify-cli -g
-# yarn global add docsify-cli
-```
-
-## Usage
-
-### `init` command
-
-Use `init` to generate your docs.
-
-```shell
-docsify init <path> [--local false] [--theme vue]
-
-# docsify i <path> [--local false] [--theme vue]
-```
-
-`<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
-
-* `--local` option:
-  * Shorthand: `-l`
-  * Type: boolean
-  * Default: `false`
-  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
-* `--theme` option:
-  * Shorthand: `-t`
-  * Type: string
-  * Default: `vue`
-  * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
-
-### `serve` command
-
-Run a server on `localhost` with livereload.
-
-```shell
-docsify serve <path> [--open false] [--port 3000]
-
-# docsify s <path> [--open false] [--port 3000]
-```
-
-* `--open` option:
-  * Shorthand: `-o`
-  * Type: boolean
-  * Default: `false`
-  * Description: Open the docs in the default browser, defaults to `false`. To explicitly set this option to `false` use `--no-open`.
-* `--port` option:
-  * Shorthand: `-p`
-  * Type: number
-  * Default: `3000`
-  * Description: Choose a listen port, defaults to `3000`.
-
-## License
-
-MIT
+> 文档更新时间：2018年7月21日
