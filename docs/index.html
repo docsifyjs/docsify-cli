@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>docsify-cli - A magical documentation generator.</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="A magical documentation generator.">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify@next/lib/themes/vue.css">
+<html lang="zh-cn">
+<meta charset="utf-8">
+<title>GREATy Documents/用户手册</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="Description">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+<link rel="shortcut icon" href="https://cnoo.xyz/favicon.ico"/>
+<script src="//unpkg.com/docsify"></script>
+<script>
+    window.$docsify = {
+      smartypants: true,
+      auto2top: true, //当路线改变时，滚动到屏幕的顶部。
+      executeScript: true, //执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开启。
+      loadSidebar: true, //_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载。
+      loadNavbar: true,//_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载。
+      maxLevel: 4,//最大的内容表级别。
+      subMaxLevel: 2,//在自定义边栏中添加目录（TOC）。
+      ga: 'UA-106147152-1',
+      name: 'GREATy 用户文档',
+      search: {
+        noData: {
+          '/de-de/': 'Keine Ergebnisse!',
+          '/zh-cn/': '没有结果!',
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/zh-cn/': '搜索',
+          '/': '搜索'
+        }
+      },      
+    plugins: [
+    function (hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span> &copy;2018&nbsp;&nbsp;<a href="https://t.me/walsm">Cyue</a><span>',
+        '<span>&nbsp;&nbsp;Proudly published with <a href="https://cnoo.xyz" target="_blank">GREATy</a>.</span>',
+        '</footer>'
+      ].join('')
+
+      hook.afterEach(function (html) {
+        return html + footer
+      })
+    }
+  ]
+}
+  </script>
+<script src="//unpkg.com/docsify"></script>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'docsify-cli',
-      basePath: '/docsify-cli/',
-      repo: 'QingWei-Li/docsify-cli'
-    }
-  </script>
-  <script src="//unpkg.com/docsify@next/lib/docsify.min.js"></script>
+  <nav>
+    <a href="https://cnoo.xyz">官网</a>
+    <a href="https://cnoo.xyz/user">用户中心</a>
+  </nav>
+<div id="app">Loading...</div>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 </html>
