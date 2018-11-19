@@ -18,6 +18,7 @@
     "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
     "serve.port": "Listen port.",
     "livereload.port": "livereload Listen port.",
+    "serve.base-path": "Serves your docs under a subpath to match the behaviour of GitHub pages.",
     "usage": "Usage",
     "version": "Show version number"
 }
