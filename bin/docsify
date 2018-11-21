@@ -72,9 +72,16 @@ var yargs = require('yargs')
         nargs: 1,
         requiresArg: true,
         type: 'number'
+      },
+      'index-name': {
+        alias: 'i',
+        desc: chalk.gray(y18n.__('serve.indexname')),
+        nargs: 1,
+        requiresArg: true,
+        type: 'string'
       }
     }),
-    handler: (argv) => run.serve(argv.path, argv.open, argv.port, argv.P)
+    handler: (argv) => run.serve(argv.path, argv.open, argv.port, argv.P, argv.i)
   })
   .command({
     command: 'start <path>',
