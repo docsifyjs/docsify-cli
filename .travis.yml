@@ -9,6 +9,6 @@ cache:
     - ./node_modules
 install:
   - npm install
-  - npm install -g gulp
+  - npm install -g gulp@3.9.0
 script:
   - gulp lint
