@@ -72,9 +72,16 @@ var yargs = require('yargs')
         nargs: 1,
         requiresArg: true,
         type: 'number'
+      },
+      'base-path': {
+        default: '.',
+        desc: chalk.grey(y18n.__('serve.base-path')),
+        nargs: 1,
+        requiresArg: true,
+        type: 'string'
       }
     }),
-    handler: (argv) => run.serve(argv.path, argv.open, argv.port, argv.P)
+    handler: (argv) => run.serve(argv.path, argv.open, argv.port, argv.P, argv['base-path'])
   })
   .command({
     command: 'start <path>',

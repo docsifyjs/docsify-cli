@@ -58,9 +58,9 @@ docsify init <path> [--local false] [--theme vue]
 Run a server on `localhost` with livereload.
 
 ```shell
-docsify serve <path> [--open false] [--port 3000]
+docsify serve <path> [--open false] [--port 3000] [--base-path .]
 
-# docsify s <path> [--open false] [--port 3000]
+# docsify s <path> [--open false] [--port 3000] [--base-path .]
 ```
 
 * `--open` option:
@@ -73,6 +73,10 @@ docsify serve <path> [--open false] [--port 3000]
   * Type: number
   * Default: `3000`
   * Description: Choose a listen port, defaults to `3000`.
+* `--base-path` option:
+  * Type: string
+  * Default: `.`
+  * Description: Serves your docs under a subpath to match the behaviour of GitHub pages.
 
 ## License
 

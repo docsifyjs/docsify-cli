@@ -18,6 +18,7 @@
     "serve.open": "自动打开浏览器",
     "serve.port": "设置端口",
     "livereload.port": "设置livereload端口",
+    "serve.base-path": "Serves your docs under a subpath to match the behaviour of GitHub pages.",
     "usage": "例子",
     "version": "当前版本号"
 }
