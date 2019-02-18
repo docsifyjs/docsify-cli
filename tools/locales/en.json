@@ -17,6 +17,7 @@
     "serve": "Run local server to preview site.",
     "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
     "serve.port": "Listen port.",
+    "serve.indexname": "Custom filename instead of index.html to serve by default",
     "livereload.port": "livereload Listen port.",
     "usage": "Usage",
     "version": "Show version number"
