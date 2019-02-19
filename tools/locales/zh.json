@@ -1,5 +1,5 @@
 {
-  "epilog": "文档地址:\n  https://QingWei-Li.github.io/docsify\n  https://QingWei-Li.github.io/docsify-cli\n\n开发:\n  https://github.com/QingWei-Li/docsify-cli/blob/master/CONTRIBUTING.md\n",
+  "epilog": "文档地址:\n  https://docsify.js.org\n  https://docsifyjs.github.io/docsify-cli\n\n开发:\n  https://github.com/docsifyjs/docsify-cli/blob/master/CONTRIBUTING.md\n",
   "group.globaloptions": "全局选项",
   "help": "帮助",
   "start": "Server for SSR",
@@ -10,6 +10,9 @@
   "serve.open": "自动打开浏览器",
   "serve.port": "设置端口",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
+  "static": "生成静态 HTML",
+  "static.dest": "输出目录",
+  "static.config": "配置文件",
   "livereload.port": "设置livereload端口",
   "usage": "例子",
   "version": "当前版本号"
