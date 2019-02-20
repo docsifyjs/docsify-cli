@@ -1,0 +1,15 @@
+{
+  "extends": "xo-space",
+  "rules": {
+    "semi": [2, "never"],
+    "no-return-assign": "off",
+    "no-unused-expressions": "off",
+    "no-new-func": "off",
+    "no-multi-assign": "off",
+    "no-mixed-operators": "off",
+    "max-params": "off",
+    "no-script-url": "off",
+    "camelcase": "off",
+    "no-warning-comments": "off"
+  }
+}
