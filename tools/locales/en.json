@@ -1,5 +1,5 @@
 {
-  "epilog": "Documentation:\n  https://QingWei-Li.github.io/docsify\n  https://QingWei-Li.github.io/docsify-cli\n\nDevelopment:\n  https://github.com/QingWei-Li/docsify-cli/blob/master/CONTRIBUTING.md\n",
+  "epilog": "Documentation:\n  https://docsify.js.org\n  https://docsifyjs.github.io/docsify-cli\n\nDevelopment:\n  https://github.com/docsifyjs/docsify-cli/blob/master/CONTRIBUTING.md\n",
   "group.globaloptions": "Global Options",
   "help": "Show help",
   "init": "Creates new docs",
@@ -10,6 +10,9 @@
   "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
   "serve.port": "Listen port.",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
+  "static": "Generate static HTML",
+  "static.dest": "Output directory",
+  "static.config": "docsify config file",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
   "version": "Show version number"

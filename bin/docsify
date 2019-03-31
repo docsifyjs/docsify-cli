@@ -86,7 +86,7 @@ const yargs = require("yargs")
     handler: argv => run.serve(argv.path, argv.open, argv.port, argv.P, argv.i)
   })
   .command({
-    command: "start <path>",
+    command: "start [path]",
     desc: chalk.gray(y18n.__("start")),
     builder: yargs =>
       yargs.options({
@@ -108,6 +108,38 @@ const yargs = require("yargs")
         }
       }),
     handler: argv => run.start(argv.path, argv.config, argv.port)
+  })
+  .command({
+    command: "static [path]",
+    desc: chalk.gray(y18n.__("static")),
+    builder: yargs =>
+      yargs.options({
+        dest: {
+          alias: "d",
+          default: "docs-static",
+          desc: chalk.gray(y18n.__("static.dest")),
+          nargs: 0,
+          requiresArg: false,
+          type: "string"
+        },
+        config: {
+          alias: "c",
+          default: false,
+          desc: chalk.gray(y18n.__("static.config")),
+          nargs: 0,
+          requiresArg: false,
+          type: "string"
+        },
+        "index-name": {
+          alias: "i",
+          desc: chalk.gray(y18n.__("serve.indexname")),
+          nargs: 1,
+          requiresArg: true,
+          type: "string"
+        }
+      }),
+    handler: argv =>
+      run.static(argv.path, argv.config, argv.indexName, argv.dest)
   })
   .help()
   .option("help", {
