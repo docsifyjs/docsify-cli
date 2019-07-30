@@ -1,5 +1,5 @@
 {
-  "epilog": "Documentation:\n  https://QingWei-Li.github.io/docsify\n  https://QingWei-Li.github.io/docsify-cli\n\nDevelopment:\n  https://github.com/QingWei-Li/docsify-cli/blob/master/CONTRIBUTING.md\n",
+  "epilog": "Documentation:\n  https://docsifyjs.github.io/docsify\n  https://docsifyjs.github.io/docsify-cli\n\nDevelopment:\n  https://github.com/docsifyjs/docsify-cli/blob/master/CONTRIBUTING.md\n",
   "group.globaloptions": "Global Options",
   "help": "Show help",
   "init": "Creates new docs",
