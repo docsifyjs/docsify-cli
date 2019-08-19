@@ -49,7 +49,7 @@
     "babel-root-import": "^4.1.3",
     "chalk": "^1.1.3",
     "conventional-github-releaser": "^1.1.2",
-    "cors": "^2.8.1",
+    "cors": "^2.8.5",
     "eslint": "^3.18.0",
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-vue": "^2.0.1",
