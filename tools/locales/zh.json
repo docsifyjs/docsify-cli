@@ -1,5 +1,5 @@
 {
-  "epilog": "文档地址:\n  https://QingWei-Li.github.io/docsify\n  https://QingWei-Li.github.io/docsify-cli\n\n开发:\n  https://github.com/QingWei-Li/docsify-cli/blob/master/CONTRIBUTING.md\n",
+  "epilog": "文档地址:\n  https://docsifyjs.github.io/docsify\n  https://docsifyjs.github.io/docsify-cli\n\n开发:\n  https://github.com/docsifyjs/docsify-cli/blob/master/CONTRIBUTING.md\n",
   "group.globaloptions": "全局选项",
   "help": "帮助",
   "start": "Server for SSR",
