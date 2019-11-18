@@ -19,6 +19,7 @@ require("yargonaut")
 
 const yargs = require("yargs")
   .demandCommand(1, chalk.red("[ERROR] 0 arguments passed. Please specify a command"))
+  .recommendCommands()
   .usage(chalk.bold(y18n.__("usage") + ": docsify <init|serve> <path>"))
   .command({
     command: "init [path]",
