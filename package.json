@@ -21,6 +21,9 @@
   "bin": {
     "docsify": "bin/docsify"
   },
+  "scripts": {
+    "release": "standard-version"
+  },
   "files": [
     "bin",
     "lib",
@@ -45,7 +48,8 @@
   },
   "devDependencies": {
     "cors": "^2.8.1",
-    "eslint": "^6.5.1"
+    "eslint": "^6.5.1",
+    "standard-version": "^7.0.1"
   },
   "keywords": [
     "docsify",
