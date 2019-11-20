@@ -1,5 +1,3 @@
-# docsify-cli
-
 <p align="center">
   <a href="https://docsify.js.org">
     <img alt="docsify" src="./media/icon.svg">
