@@ -1,3 +1,22 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.4.0](https://github.com/QingWei-Li/docsify-cli/compare/v4.3.0...v4.4.0) (2019-11-20)
+
+
+### Features
+
+* **chore:** show up help if no args were passed ([#72](https://github.com/QingWei-Li/docsify-cli/issues/72)) ([2226057](https://github.com/QingWei-Li/docsify-cli/commit/22260576ef67ab6069873219080afad5257916bd)), closes [#71](https://github.com/QingWei-Li/docsify-cli/issues/71)
+* **serve:** add --index-name to rewrite default index name ([#48](https://github.com/QingWei-Li/docsify-cli/issues/48)) ([dc8e993](https://github.com/QingWei-Li/docsify-cli/commit/dc8e9930133f05726712b7392f22cba67e9f5c4f))
+
+
+### Bug Fixes
+
+* **chore:** warn on unknown commands and command recommendation ([#74](https://github.com/QingWei-Li/docsify-cli/issues/74)) ([b46a707](https://github.com/QingWei-Li/docsify-cli/commit/b46a707c528555531bf7cb4ec448f670c20c2210))
+* npm audit issues ([ac1bcc3](https://github.com/QingWei-Li/docsify-cli/commit/ac1bcc36616f295a51843ddd0eebca158a7b6b6a))
+* remove gulp-connect ([032817b](https://github.com/QingWei-Li/docsify-cli/commit/032817b4f6fa512d8d55ba02e18626386a891900))
+
 <a name="4.1.9"></a>
 ## [4.1.9](https://github.com/QingWei-Li/docsify-cli/compare/v4.1.8...v4.1.9) (2017-07-12)
 
