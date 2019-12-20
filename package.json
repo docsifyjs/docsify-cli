@@ -22,6 +22,7 @@
     "docsify": "bin/docsify"
   },
   "scripts": {
+  	"test": "ava test/index.js",
     "release": "standard-version"
   },
   "files": [
@@ -47,8 +48,10 @@
     "yargs": "^14.2.0"
   },
   "devDependencies": {
+    "ava": "^2.4.0",
     "cors": "^2.8.1",
     "eslint": "^6.5.1",
+    "execa": "^4.0.0",
     "standard-version": "^7.0.1"
   },
   "keywords": [
