@@ -22,7 +22,7 @@
     "docsify": "bin/docsify"
   },
   "scripts": {
-  	"test": "ava test/index.js",
+  	"test": "ava e2e/index.js",
     "release": "standard-version"
   },
   "files": [
