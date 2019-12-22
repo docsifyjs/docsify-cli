@@ -23,6 +23,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "ava e2e/index.js",
     "release": "standard-version",
     "prebuild": "rimraf bin",
