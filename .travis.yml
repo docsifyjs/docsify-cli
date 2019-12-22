@@ -9,3 +9,4 @@ cache:
     - ./node_modules
 install:
   - npm install
+  - npm run build
