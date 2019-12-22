@@ -6,6 +6,7 @@ const fse = require('fs-extra')
 
 class Locales {
   constructor() {
+    // eslint-disable-next-line
     this.y18n = Y18n({
       directory: path.resolve(__dirname),
       updateFiles: false,
@@ -20,7 +21,7 @@ class Locales {
 
     try {
       this._existsLocaleFile(locale)
-    } catch (e) {
+    } catch (e) { // eslint-disable-line
       return 'en'
     }
 
