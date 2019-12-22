@@ -15,3 +15,8 @@ test('shows up help message by passing in --help flag', async t => {
     const { stdout } = await execa(rootCommand, ['--help']);
     t.snapshot(stdout);
 });
+
+test('shows up help message by passing in -h flag', async t => {
+    const { stdout } = await execa(rootCommand, ['-h']);
+    t.snapshot(stdout);
+});
