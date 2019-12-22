@@ -24,6 +24,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "pretest": "npm run lint",
     "test": "ava e2e/index.js",
     "release": "standard-version",
     "prebuild": "rimraf bin",
