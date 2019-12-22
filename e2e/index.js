@@ -18,3 +18,4 @@ const matchSnapshot = async (t, arg) => {
 
 test('shows help with -h flag', matchSnapshot, '-h');
 test('shows help with --help flag', matchSnapshot, '--help');
+test('shows help with -v flag', matchSnapshot, '-v');
