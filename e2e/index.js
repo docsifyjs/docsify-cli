@@ -11,12 +11,10 @@ test('shows up help message without any args', async t => {
     t.snapshot(stderr);
 });
 
-test('shows up help message by passing in --help flag', async t => {
-    const { stdout } = await execa(rootCommand, ['--help']);
-    t.snapshot(stdout);
-});
+const matchSnapshot = async (t, arg) => {
+  const { stdout } = await execa(rootCommand, [arg]);
+  t.snapshot(stdout);
+};
 
-test('shows up help message by passing in -h flag', async t => {
-    const { stdout } = await execa(rootCommand, ['-h']);
-    t.snapshot(stdout);
-});
+test('shows help with -h flag', matchSnapshot, '-h');
+test('shows help with --help flag', matchSnapshot, '--help');
