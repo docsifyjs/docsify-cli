@@ -20,3 +20,8 @@ test('shows help with -h flag', matchSnapshot, '-h')
 test('shows help with --help flag', matchSnapshot, '--help')
 test('shows version information with -v flag', matchSnapshot, '-v')
 test('shows version information with --version flag', matchSnapshot, '--version')
+
+test('rejects promise due to error on passing in an unknown command', async t => {
+  const {stderr} = await execa(rootCommand, ['junkcmd'], {reject: false})
+  t.snapshot(stderr)
+})
