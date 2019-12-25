@@ -28,10 +28,6 @@
   </a>
 </p>
 
-## Links
-
-- [docsify](https://github.com/QingWei-Li/docsify)
-
 ## Screencast
 
 ![Screencast](https://raw.githubusercontent.com/QingWei-Li/docsify-cli/master/media/screencast.gif)
