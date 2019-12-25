@@ -5,5 +5,5 @@
 - Make your changes to the code.
 - Run `npm install`.
 - Run `npm link` which creates a symlink and thereby `docsify` can be accessed globally.
-- Commit your changes with a message following the [`conventional-changelog-angular` commit message convention](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/convention.md).
+- We use [commitlint conventional naming rules](https://www.npmjs.com/package/@commitlint/config-conventional#rules) for our commits, make sure that you follow them.
 - Push to Github and open a pull request.
