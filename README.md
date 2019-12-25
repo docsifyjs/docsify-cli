@@ -89,6 +89,10 @@ docsify serve <path> [--open false] [--port 3000]
   - Default: `3000`
   - Description: Choose a listen port, defaults to `3000`.
 
+## Contributing
+
+Please see the [Contributing Guidelines](./CONTRIBUTING.md)
+
 ## License
 
 [MIT](./LICENSE)
