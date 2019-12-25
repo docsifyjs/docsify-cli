@@ -91,4 +91,4 @@ docsify serve <path> [--open false] [--port 3000]
 
 ## License
 
-MIT
+[MIT](./LICENSE)
