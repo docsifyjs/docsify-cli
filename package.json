@@ -37,7 +37,10 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "files": [
     "bin",
