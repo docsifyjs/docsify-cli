@@ -52,7 +52,7 @@
     "connect": "^3.6.0",
     "connect-livereload": "^0.6.0",
     "cp-file": "^7.0.0",
-    "docsify": ">=3",
+    "docsify": "^4.10.2",
     "docsify-server-renderer": ">=4",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
