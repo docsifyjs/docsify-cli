@@ -52,6 +52,11 @@ docsify init <path> [--local false] [--theme vue]
   * Type: string
   * Default: `vue`
   * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+* `--plugins` option:
+  * Shorthand: `-p`
+  * Type: array
+  * Default: `[]`
+  * Description: Provide a list of plugins to insert as `<script>` tags to `index.html`. If a plugin name is provided the script will have a url of `https://unpkg.com/docsify/lib/plugins/<plugin_name>`, otherwise provide the url to the plugin. Example: `docsify init docs/ -p search gitalk https://unpkg.com/docsify-copy-code@2`
 
 ### `serve` command
 
