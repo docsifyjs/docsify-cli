@@ -1,17 +1,32 @@
-# docsify-cli
+<p align="center">
+  <a href="https://docsify.js.org">
+    <img alt="docsify" src="./media/icon.svg">
+  </a>
+</p>
 
-[![Build Status master branch](https://img.shields.io/travis/QingWei-Li/docsify-cli/master.svg?style=flat-square)](https://travis-ci.org/QingWei-Li/docsify-cli)
-[![License](https://img.shields.io/github/license/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/blob/master/LICENSE)
-[![Github tag](https://img.shields.io/github/tag/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/tags)
-[![npm version](https://img.shields.io/npm/v/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
-[![npm total downloads](https://img.shields.io/npm/dt/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
-[![npm total monthly](https://img.shields.io/npm/dm/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
+<p align="center">
+ 🖌 docsify cli - A magical documentation generator.
+</p>
 
-> 🖌 docsify cli - A magical documentation generator.
+<p align="center">
+  <a href="#backers"><img alt="Backers on Open Collective" src="https://opencollective.com/docsify/backers/badge.svg?style=flat-square"></a>
+  <a href="#sponsors"><img alt="Sponsors on Open Collective" src="https://opencollective.com/docsify/sponsors/badge.svg?style=flat-square"></a>
+  <a href="https://travis-ci.org/docsifyjs/docsify"><img alt="Travis Status" src="https://img.shields.io/travis/docsifyjs/docsify-cli/master.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/docsify"><img alt="npm" src="https://img.shields.io/npm/v/docsify-cli.svg?style=flat-square"></a>
+<a href="https://gitter.im/docsifyjs/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link"><img alt="gitter" src="https://img.shields.io/gitter/room/docsifyjs/docsify.svg?style=flat-square"></a>
+<a href="https://github.com/docsifyjs/docsify-cli/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/docsifyjs/docsify-cli.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/docsify-cli"><img alt="npm-total-download" src="https://img.shields.io/npm/dt/docsify-cli.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/docsify-cli"><img alt="npm-monthly-download" src="https://img.shields.io/npm/dm/docsify-cli.svg?style=flat-square"></a>
 
-## Links
+</p>
 
-* [docsify](https://github.com/QingWei-Li/docsify)
+<p align="center">Gold Sponsor via <a href="https://opencollective.com/docsify">Open Collective</a></p>
+
+<p align="center">
+  <a href="https://opencollective.com/docsify/order/3254">
+    <img src="https://opencollective.com/docsify/tiers/gold-sponsor.svg?avatarHeight=36">
+  </a>
+</p>
 
 ## Screencast
 
@@ -42,21 +57,21 @@ docsify init <path> [--local false] [--theme vue]
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
 
-* `--local` option:
-  * Shorthand: `-l`
-  * Type: boolean
-  * Default: `false`
-  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
-* `--theme` option:
-  * Shorthand: `-t`
-  * Type: string
-  * Default: `vue`
-  * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
-* `--plugins` option:
-  * Shorthand: `-p`
-  * Type: array
-  * Default: `[]`
-  * Description: Provide a list of plugins to insert as `<script>` tags to `index.html`. If a plugin name is provided the script will have a url of `https://unpkg.com/docsify/lib/plugins/<plugin_name>`, otherwise provide the url to the plugin. Example: `docsify init docs/ -p search gitalk https://unpkg.com/docsify-copy-code@2`
+- `--local` option:
+  - Shorthand: `-l`
+  - Type: boolean
+  - Default: `false`
+  - Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
+- `--theme` option:
+  - Shorthand: `-t`
+  - Type: string
+  - Default: `vue`
+  - Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+- `--plugins` option:
+  - Shorthand: `-p`
+  - Type: array
+  - Default: `[]`
+  - Description: Provide a list of plugins to insert as `<script>` tags to `index.html`. If a plugin name is provided the script will have a url of `https://unpkg.com/docsify/lib/plugins/<plugin_name>`, otherwise provide the url to the plugin. Example: `docsify init docs/ -p search gitalk https://unpkg.com/docsify-copy-code@2`
 
 ### `serve` command
 
@@ -68,17 +83,19 @@ docsify serve <path> [--open false] [--port 3000]
 # docsify s <path> [--open false] [--port 3000]
 ```
 
-* `--open` option:
-  * Shorthand: `-o`
-  * Type: boolean
-  * Default: `false`
-  * Description: Open the docs in the default browser, defaults to `false`. To explicitly set this option to `false` use `--no-open`.
-* `--port` option:
-  * Shorthand: `-p`
-  * Type: number
-  * Default: `3000`
-  * Description: Choose a listen port, defaults to `3000`.
+- `--open` option:
+  - Shorthand: `-o`
+  - Type: boolean
+  - Default: `false`
+  - Description: Open the docs in the default browser, defaults to `false`. To explicitly set this option to `false` use `--no-open`.
+- `--port` option:
+  - Shorthand: `-p`
+  - Type: number
+  - Default: `3000`
+  - Description: Choose a listen port, defaults to `3000`.
+## Contributing
+Please see the [Contributing Guidelines](./CONTRIBUTING.md)
 
 ## License
 
-MIT
+[MIT](./LICENSE)
