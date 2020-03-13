@@ -12,12 +12,7 @@ test('shows up help message without any args', async t => {
 })
 
 const matchSnapshot = async (t, arg) => {
-  let args = [arg]
-
-  if ((typeof arg) === 'object') {
-    args = [arg[0], ...arg.slice(1)]
-  }
-
+  const args = (typeof arg) === 'object' ? [...arg] : [arg]
   const {stdout} = await execa(rootCommand, args)
   t.snapshot(stdout)
 }
