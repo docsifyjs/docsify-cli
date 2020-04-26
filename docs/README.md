@@ -35,9 +35,9 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init <path> [--local false] [--theme vue]
+docsify init <path> [--local false] [--theme vue] [--sidebar false] [--navbar false]
 
-# docsify i <path> [--local false] [--theme vue]
+# docsify i <path> [--local false] [--theme vue] [--sidebar false] [--navbar false]
 ```
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
@@ -57,6 +57,11 @@ docsify init <path> [--local false] [--theme vue]
   * Type: boolean
   * Default: `false`
   * Description: Include sidebar when generating a new doc, defaults to `false`.
+* `--navbar` option:
+  * Shorthand: `-n`
+  * Type: boolean
+  * Default: `false`
+  * Description: Include navbar when generating a new doc, defaults to `false`.
 
 ### `serve` command
 
