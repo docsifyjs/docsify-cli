@@ -8,6 +8,7 @@
   "init.theme": "Theme file to be used.",
   "init.sidebar": "Include sidebar when generating a new doc, defaults to `false`.",
   "init.navbar": "Include navbar when generating a new doc, defaults to `false`.",
+  "init.coverpage": "Include coverpage when generating a new doc, defaults to `false`.",
   "serve": "Run local server to preview site.",
   "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
   "serve.port": "Listen port.",
