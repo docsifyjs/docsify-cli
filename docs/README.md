@@ -52,6 +52,11 @@ docsify init <path> [--local false] [--theme vue]
   * Type: string
   * Default: `vue`
   * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+* `--sidebar` option:
+  * Shorthand: `-s`
+  * Type: boolean
+  * Default: `false`
+  * Description: Include sidebar when generating a new doc, defaults to `false`.
 
 ### `serve` command
 
