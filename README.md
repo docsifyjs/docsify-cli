@@ -96,6 +96,10 @@ docsify serve <path> [--open false] [--port 3000]
 ## Contributing
 Please see the [Contributing Guidelines](./CONTRIBUTING.md)
 
+## Contribution
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/docsifyjs/docsify-cli)
+
 ## License
 
 [MIT](./LICENSE)
