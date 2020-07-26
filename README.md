@@ -30,7 +30,7 @@
 
 ## Screencast
 
-![Screencast](https://raw.githubusercontent.com/QingWei-Li/docsify-cli/master/media/screencast.gif)
+![Screencast](https://raw.githubusercontent.com/docsifyjs/docsify-cli/master/media/screencast.gif)
 
 > Running a server on `localhost` with live-reload.
 
@@ -99,4 +99,4 @@ Please see the [Contributing Guidelines](./CONTRIBUTING.md)
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](LICENSE)
