@@ -7,10 +7,10 @@
     "email": "cinwell.li@gmail.com",
     "url": "https://github.com/QingWei-Li"
   },
-  "homepage": "https://github.com/QingWei-Li/docsify-cli#readme",
+  "homepage": "https://github.com/docsifyjs/docsify-cli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QingWei-Li/docsify-cli.git"
+    "url": "git+https://github.com/docsifyjs/docsify-cli.git"
   },
   "license": "MIT",
   "engines": {
