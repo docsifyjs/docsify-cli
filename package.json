@@ -75,7 +75,7 @@
     "rimraf": "^3.0.0",
     "rollup": "^1.27.13",
     "rollup-plugin-executable": "^1.5.2",
-    "standard-version": "^7.0.1"
+    "standard-version": "^8.0.1"
   },
   "keywords": [
     "docsify",
