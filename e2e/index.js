@@ -27,11 +27,12 @@ test('rejects promise due to error on passing in an unknown command', async t =>
 })
 
 test('init the docs directory', async t => {
-  const {stdout} = await execa(rootCommand, ['init', './test_docs'], {reject: false})
+  // If you get `./test_docs already exists.`, delete the test_docs directory manually.
+  const {stdout} = await execa(rootCommand, ['init', './test_docs'], {reject: false, timeout: 3000})
   t.snapshot(stdout)
 })
 
 test('init the docs directory twice', async t => {
-  const {stdout} = await execa(rootCommand, ['init', './test_docs'], {reject: false, input: 'n'})
+  const {stdout} = await execa(rootCommand, ['init', './'], {reject: false, input: 'n'})
   t.snapshot(stdout)
 })
