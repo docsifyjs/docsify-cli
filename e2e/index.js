@@ -25,3 +25,13 @@ test('rejects promise due to error on passing in an unknown command', async t =>
   const {stderr} = await execa(rootCommand, ['junkcmd'], {reject: false})
   t.snapshot(stderr)
 })
+
+test('init the docs directory', async t => {
+  const {stdout} = await execa(rootCommand, ['init', './test_docs'], {reject: false})
+  t.snapshot(stdout)
+})
+
+test('init the docs directory twice', async t => {
+  const {stdout} = await execa(rootCommand, ['init', './test_docs'], {reject: false, input: 'n'})
+  t.snapshot(stdout)
+})
