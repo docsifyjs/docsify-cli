@@ -4,3 +4,4 @@
 node_modules/
 yarn.lock
 bin/
+test_docs/

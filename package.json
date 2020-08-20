@@ -54,6 +54,7 @@
     "cp-file": "^7.0.0",
     "docsify": "^4.10.2",
     "docsify-server-renderer": ">=4",
+    "enquirer": "^2.3.6",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
     "livereload": "^0.9.1",
