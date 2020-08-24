@@ -25,7 +25,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "pretest": "npm run lint",
-    "test": "ava e2e/index.js",
+    "test": "ava e2e/*.test.js e2e/commands/*.test.js",
     "prebuild": "rimraf bin",
     "build": "rollup -c",
     "prerelease": "npm run build",
@@ -67,6 +67,7 @@
   },
   "devDependencies": {
     "ava": "^2.4.0",
+    "cli-prompts-test": "^0.1.1",
     "cors": "^2.8.1",
     "eslint": "^6.8.0",
     "eslint-config-xo-space": "^0.22.0",
