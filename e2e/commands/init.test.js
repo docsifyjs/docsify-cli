@@ -1,7 +1,7 @@
 const test = require('ava')
 const fs = require('fs')
-
-const {run, runPromptWithAnswers, ENTER} = require('../helpers/test-utils.js')
+const {ENTER} = require('cli-prompts-test')
+const {run, runPromptWithAnswers} = require('../helpers/test-utils.js')
 
 const genPath = `${__dirname}/init-cmd`
 const docsPath = `${__dirname}/init-cmd/docs`
