@@ -1,0 +1,27 @@
+name: docsify-cli
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: [ macos-latest, ubuntu-latest ]
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+          run: npm ci
+
+      - name: Run e2e tests
+          run: npm run test
+
+      - name: Build docsify-cli
+          run: npm run build
