@@ -4,10 +4,11 @@ on: [ push, pull_request ]
 
 jobs:
   build:
-    runs-on: [ macos-latest, ubuntu-latest ]
-
+    name: Docsify CLI ${{ matrix.node-version }} Test on ${{ matrix.os }}
+    runs-on: "${{ matrix.os }}"
     strategy:
       matrix:
+        os: [ macos-latest, ubuntu-latest ]
         node-version: [10.x, 12.x, 14.x]
 
     steps:
