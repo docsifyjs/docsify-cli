@@ -1,14 +1,12 @@
-<!-- _coverpage.md -->
+![logo](https://cdn.jsdelivr.net/gh/docsifyjs/docsify/docs/_media/icon.svg)
 
-![logo](_media/icon.svg)
-
-# docsify <small>3.5</small>
+# docsify
 
 > A magical documentation site generator.
 
-- Simple and lightweight (~21kB gzipped)
+- Simple and lightweight
 - No statically built html files
 - Multiple themes
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[Getting Started](#docsify)

@@ -1,6 +1,6 @@
 # docsify-cli
 
-[![Build Status master branch](https://img.shields.io/travis/QingWei-Li/docsify-cli/master.svg?style=flat-square)](https://travis-ci.org/QingWei-Li/docsify-cli)
+[![Build Status master branch](https://img.shields.io/travis/docsifyjs/docsify-cli/master.svg?style=flat-square)](https://travis-ci.org/docsifyjs/docsify-cli)
 [![License](https://img.shields.io/github/license/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/blob/master/LICENSE)
 [![Github tag](https://img.shields.io/github/tag/QingWei-Li/docsify-cli.svg?style=flat-square)](https://github.com/QingWei-Li/docsify-cli/tags)
 [![npm version](https://img.shields.io/npm/v/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
@@ -11,11 +11,11 @@
 
 ## Links
 
-* [docsify](https://github.com/QingWei-Li/docsify)
+* [docsify](https://github.com/docsifyjs/docsify)
 
 ## Screencast
 
-![Screencast](https://raw.githubusercontent.com/QingWei-Li/docsify-cli/master/media/screencast.gif)
+![Screencast](https://raw.githubusercontent.com/docsifyjs/docsify-cli/master/media/screencast.gif)
 
 > Running a server on `localhost` with live-reload.
 
@@ -46,7 +46,7 @@ docsify init <path> [--local false] [--theme vue] [--sidebar false] [--navbar fa
   * Shorthand: `-l`
   * Type: boolean
   * Default: `false`
-  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
+  * Description: Copy `docsify` files to the docs path, defaults to `false` using `jsDelivr` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
 * `--theme` option:
   * Shorthand: `-t`
   * Type: string
