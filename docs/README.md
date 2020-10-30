@@ -1,6 +1,6 @@
 # docsify-cli
 
-[![Build Status master branch](https://img.shields.io/travis/docsifyjs/docsify-cli/master.svg?style=flat-square)](https://travis-ci.org/github/docsifyjs/docsify-cli)
+[![Build Status master branch](https://github.com/docsifyjs/docsify-cli/workflows/docsify-cli/badge.svg)](https://github.com/docsifyjs/docsify-cli/actions)
 [![License](https://img.shields.io/github/license/docsifyjs/docsify-cli.svg?style=flat-square)](https://github.com/docsifyjs/docsify-cli/blob/master/LICENSE)
 [![Github tag](https://img.shields.io/github/tag/docsifyjs/docsify-cli.svg?style=flat-square)](https://github.com/docsifyjs/docsify-cli/tags)
 [![npm version](https://img.shields.io/npm/v/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
