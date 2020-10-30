@@ -61,7 +61,7 @@ docsify init <path> [--local false] [--theme vue] [--sidebar false] [--navbar fa
   - Shorthand: `-l`
   - Type: boolean
   - Default: `false`
-  - Description: Copy `docsify` files to the docs path, defaults to `false` using `jsDelivr` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
+  - Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
 - `--theme` option:
   - Shorthand: `-t`
   - Type: string
