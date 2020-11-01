@@ -24,4 +24,5 @@ jobs:
         run: npm run build
 
       - name: Run e2e tests
+        if: ${{ matrix.os != 'windows-latest' }}
         run: npm run test
