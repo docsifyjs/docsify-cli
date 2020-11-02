@@ -25,7 +25,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "pretest": "npm run lint",
-    "test": "ava e2e/*.test.js e2e/commands/*.test.js",
+    "test": "ava",
     "prebuild": "rimraf bin",
     "build": "rollup -c",
     "prerelease": "npm run build",
