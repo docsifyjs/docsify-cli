@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.4.2](https://github.com/docsifyjs/docsify-cli/compare/v4.4.1...v4.4.2) (2020-11-17)
+
+
+### Features
+
+* Added asking whether to rewrite files ([#117](https://github.com/docsifyjs/docsify-cli/issues/117)) ([f811906](https://github.com/docsifyjs/docsify-cli/commit/f8119064c54d3ad1817f31be058d25d3384e85c6))
+* Included docsify version in url for the template ([#107](https://github.com/docsifyjs/docsify-cli/issues/107)) ([d92d030](https://github.com/docsifyjs/docsify-cli/commit/d92d03005e4f0188671a212f1eb0abc59f46a0b1))
+
+
+### Bug Fixes
+
+* alias not working ([#125](https://github.com/docsifyjs/docsify-cli/issues/125)) ([f3af553](https://github.com/docsifyjs/docsify-cli/commit/f3af553912b962a132743b03ba56ab292bd1b4b9))
+
 ### [4.4.1](https://github.com/QingWei-Li/docsify-cli/compare/v4.4.0...v4.4.1) (2020-06-05)
 
 
@@ -337,6 +350,3 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0"></a>
 # 0.1.0 (2016-11-24)
-
-
-
