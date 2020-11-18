@@ -29,7 +29,7 @@
     "prebuild": "rimraf bin",
     "build": "rollup -c",
     "prerelease": "npm run build",
-    "release": "standard-version"
+    "release": "standard-version -a"
   },
   "husky": {
     "hooks": {
@@ -41,6 +41,11 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "ava e2e/cli.test.js -u && git add ."
+    }
   },
   "files": [
     "bin",
