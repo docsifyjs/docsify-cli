@@ -35,9 +35,9 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init <path> [--local false] [--theme vue]
+docsify init <path> [--local false] [--theme vue] [--sidebar false] [--navbar false] [--coverpage false]
 
-# docsify i <path> [--local false] [--theme vue]
+# docsify i <path> [--local false] [--theme vue] [--sidebar false] [--navbar false] [--coverpage false]
 ```
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
@@ -46,12 +46,27 @@ docsify init <path> [--local false] [--theme vue]
   * Shorthand: `-l`
   * Type: boolean
   * Default: `false`
-  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
+  * Description: Copy `docsify` files to the docs path, defaults to `false` using `jsDelivr` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
 * `--theme` option:
   * Shorthand: `-t`
   * Type: string
   * Default: `vue`
   * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+* `--sidebar` option:
+  * Shorthand: `-s`
+  * Type: boolean
+  * Default: `false`
+  * Description: Include sidebar when generating a new doc, defaults to `false`.
+* `--navbar` option:
+  * Shorthand: `-n`
+  * Type: boolean
+  * Default: `false`
+  * Description: Include navbar when generating a new doc, defaults to `false`.
+* `--coverpage` option:
+  * Shorthand: `-c`
+  * Type: boolean
+  * Default: `false`
+  * Description: Include coverpage when generating a new doc, defaults to `false`.
 
 ### `serve` command
 
