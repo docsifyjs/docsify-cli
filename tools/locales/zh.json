@@ -10,6 +10,8 @@
   "serve.open": "自动打开浏览器",
   "serve.port": "设置端口",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
+  "generate": "Docsify的生成器",
+  "generate.sidebar": "生成侧边栏文件",
   "livereload.port": "设置livereload端口",
   "usage": "例子",
   "version": "当前版本号"

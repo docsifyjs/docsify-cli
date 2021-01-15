@@ -10,6 +10,8 @@
   "serve.open": "Open docs in default browser. To explicitly set --open to false you may use --no-open.",
   "serve.port": "Listen port.",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
+  "generate": "Docsify's generators",
+  "generate.sidebar": "Generate sidebar file",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
   "version": "Show version number"
