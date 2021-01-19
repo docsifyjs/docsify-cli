@@ -25,4 +25,7 @@ test('generate _sidebar.md', t => {
   run(['generate', 'docs'], {cwd: genPath})
   // Check for existence
   t.true(fs.existsSync(path.join(docsPath, '_sidebar.md')))
+
+  const {stderr} = run(['generate', 'docs'], {cwd: genPath})
+  t.is(stderr, 'The sidebar file \'_sidebar.md\' already exists.')
 })
