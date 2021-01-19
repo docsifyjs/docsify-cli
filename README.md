@@ -89,7 +89,7 @@ docsify serve <path> [--open false] [--port 3000]
   - Default: `3000`
   - Description: Choose a listen port, defaults to `3000`.
 
-### `gen` command
+### `generate` command
 
 Docsify's generators.
 
