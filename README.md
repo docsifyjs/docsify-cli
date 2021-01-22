@@ -52,7 +52,7 @@ Use `init` to generate your docs.
 ```shell
 docsify init <path> [--local false] [--theme vue]
 
-# docsify i <path> [--local false] [--theme vue]
+# docsify i <path> [-l false] [-t vue]
 ```
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
@@ -75,7 +75,7 @@ Run a server on `localhost` with livereload.
 ```shell
 docsify serve <path> [--open false] [--port 3000]
 
-# docsify s <path> [--open false] [--port 3000]
+# docsify s <path> [-o false] [-p 3000]
 ```
 
 - `--open` option:
@@ -88,6 +88,22 @@ docsify serve <path> [--open false] [--port 3000]
   - Type: number
   - Default: `3000`
   - Description: Choose a listen port, defaults to `3000`.
+
+### `generate` command
+
+Docsify's generators.
+
+```shell
+docsify generate <path> [--sidebar _sidebar.md]
+
+# docsify g <path> [-s _sidebar.md]
+```
+
+- `--sidebar` option:
+  - Shorthand: `-s`
+  - Type: string
+  - Default: `_sidebar.md`
+  - Description: Generate sidebar file, defaults to `_sidebar.md`.
 
 ## Contributing
 
