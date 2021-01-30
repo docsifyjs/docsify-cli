@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.4.2](https://github.com/docsifyjs/docsify-cli/compare/v4.4.1...v4.4.2) (2020-11-17)
+
+
+### Features
+
+* Added asking whether to rewrite files ([#117](https://github.com/docsifyjs/docsify-cli/issues/117)) ([f811906](https://github.com/docsifyjs/docsify-cli/commit/f8119064c54d3ad1817f31be058d25d3384e85c6))
+* Included docsify version in url for the template ([#107](https://github.com/docsifyjs/docsify-cli/issues/107)) ([d92d030](https://github.com/docsifyjs/docsify-cli/commit/d92d03005e4f0188671a212f1eb0abc59f46a0b1))
+
+
+### Bug Fixes
+
+* alias not working ([#125](https://github.com/docsifyjs/docsify-cli/issues/125)) ([f3af553](https://github.com/docsifyjs/docsify-cli/commit/f3af553912b962a132743b03ba56ab292bd1b4b9))
+
+### [4.4.1](https://github.com/QingWei-Li/docsify-cli/compare/v4.4.0...v4.4.1) (2020-06-05)
+
+
+### Bug Fixes
+
+* Allow config flag to take a parameter ([9b35260](https://github.com/QingWei-Li/docsify-cli/commit/9b352607d78bf2bbe07fd358ada3ce3c56d3fc29))
+* generate snapshot for default behavior ([3ebfd82](https://github.com/QingWei-Li/docsify-cli/commit/3ebfd82d1e678cc38e3e2f412704e1c0600f8f35))
+* lint ([10c29c9](https://github.com/QingWei-Li/docsify-cli/commit/10c29c9d18a135ed39de2a3fb0524bd81a664f87))
+* lint codebase ([518b3ef](https://github.com/QingWei-Li/docsify-cli/commit/518b3efc897409fbb65bb4dbe2dcab0342eba6ff))
+* lint-staged config ([fa1c125](https://github.com/QingWei-Li/docsify-cli/commit/fa1c1255a167f599bfc2e6f99aec599761966c1f))
+* remove redundant snapshot files ([4f69e30](https://github.com/QingWei-Li/docsify-cli/commit/4f69e30a8b896214fde96eebfa924832ce27cf10))
+* tweak ([959741d](https://github.com/QingWei-Li/docsify-cli/commit/959741d7769431ab3c62aa9be4332289e3a60ee3))
+* tweak ([463f642](https://github.com/QingWei-Li/docsify-cli/commit/463f64275814ff679272a2254e29d43fe1371dd4))
+* typo ([94c60be](https://github.com/QingWei-Li/docsify-cli/commit/94c60be91ed5480576c9573b82dff16b21f1bde0))
+
 ## [4.4.0](https://github.com/QingWei-Li/docsify-cli/compare/v4.3.0...v4.4.0) (2019-11-20)
 
 
@@ -322,6 +350,3 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.1.0"></a>
 # 0.1.0 (2016-11-24)
-
-
-

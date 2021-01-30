@@ -11,6 +11,8 @@
   "serve.port": "Listen port.",
   "serve.ip": "Listen IP.",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
+  "generate": "Docsify's generators",
+  "generate.sidebar": "Generate sidebar file",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
   "version": "Show version number"
