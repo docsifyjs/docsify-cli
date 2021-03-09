@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.4.3](https://github.com/docsifyjs/docsify-cli/compare/v4.4.2...v4.4.3) (2021-03-09)
+
+
+### Features
+
+* auto generate sidebar ([#130](https://github.com/docsifyjs/docsify-cli/issues/130)) ([e83bfcb](https://github.com/docsifyjs/docsify-cli/commit/e83bfcbd88b43fa8f13d7db13b801da98cca4aea))
+
 ### [4.4.2](https://github.com/docsifyjs/docsify-cli/compare/v4.4.1...v4.4.2) (2020-11-17)
 
 
