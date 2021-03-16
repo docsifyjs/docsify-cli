@@ -22,13 +22,22 @@ test.after('cleanup', () => {
 })
 
 test('generates docs directory', t => {
-  run(['init', 'docs'], {cwd: genPath})
+  const {exitCode} = run(['init', 'docs'], {cwd: genPath})
+
+  // Assert for exit code
+  t.is(exitCode, 0)
+
   // Check for existence
   t.true(fs.existsSync(path.join(docsPath, 'README.md')))
   t.true(fs.existsSync(path.join(docsPath, 'index.html')))
 })
 
 test('force generates docs directory with --local flag', async t => {
-  await runPromptWithAnswers(['init', 'docs', '--local'], ['y', ENTER], genPath)
+  const {exitCode} = await runPromptWithAnswers(
+    ['init', 'docs', '--local'],
+    ['y', ENTER],
+    genPath
+  )
+  t.is(exitCode, 0)
   t.true(fs.existsSync(path.join(docsPath, 'vendor')))
 })
