@@ -56,7 +56,7 @@ docsify init <path> [--local false] [--theme vue]
   * Shorthand: `-p`
   * Type: array
   * Default: `[]`
-  * Description: Provide a list of plugins to insert as `<script>` tags to `index.html`. If a plugin name is provided the script will have a url of `https://unpkg.com/docsify/lib/plugins/<plugin_name>`, otherwise provide the url to the plugin. Example: `docsify init docs/ -p search gitalk https://unpkg.com/docsify-copy-code@2`
+  * Description: Provide a list of plugins to insert as `<script>` tags to `index.html`. If a plugin name is provided the script will have a url of `https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/<plugin_name>`, otherwise provide the url to the plugin. Example: `docsify init docs/ -p search gitalk https://cdn.jsdelivr.net/npm/docsify-copy-code@2`
 
 ### `serve` command
 
