@@ -1,16 +1,16 @@
 {
   "name": "docsify-cli",
-  "version": "4.4.1",
+  "version": "4.4.3",
   "description": "A magical documentation generator.",
   "author": {
     "name": "qingwei-li",
     "email": "cinwell.li@gmail.com",
     "url": "https://github.com/QingWei-Li"
   },
-  "homepage": "https://github.com/QingWei-Li/docsify-cli#readme",
+  "homepage": "https://github.com/docsifyjs/docsify-cli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QingWei-Li/docsify-cli.git"
+    "url": "git+https://github.com/docsifyjs/docsify-cli.git"
   },
   "license": "MIT",
   "engines": {
@@ -25,11 +25,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "pretest": "npm run lint",
-    "test": "ava e2e/index.js",
+    "test": "ava",
     "prebuild": "rimraf bin",
     "build": "rollup -c",
     "prerelease": "npm run build",
-    "release": "standard-version"
+    "release": "standard-version -a"
   },
   "husky": {
     "hooks": {
@@ -42,6 +42,11 @@
       "git add"
     ]
   },
+  "standard-version": {
+    "scripts": {
+      "postbump": "ava e2e/cli.test.js -u && git add ."
+    }
+  },
   "files": [
     "bin",
     "lib",
@@ -52,20 +57,22 @@
     "connect": "^3.6.0",
     "connect-livereload": "^0.6.0",
     "cp-file": "^7.0.0",
-    "docsify": "^4.10.2",
-    "docsify-server-renderer": ">=4",
+    "docsify": "^4.12.1",
+    "docsify-server-renderer": ">=4.10.0",
+    "enquirer": "^2.3.6",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
     "livereload": "^0.9.1",
     "lru-cache": "^5.1.1",
     "open": "^6.4.0",
     "serve-static": "^1.12.1",
-    "update-notifier": "^3.0.1",
+    "update-notifier": "^4.1.0",
     "yargonaut": "^1.1.2",
     "yargs": "^14.2.0"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "ava": "^3.13.0",
+    "cli-prompts-test": "^0.3.0",
     "cors": "^2.8.1",
     "eslint": "^6.8.0",
     "eslint-config-xo-space": "^0.22.0",
@@ -75,7 +82,7 @@
     "rimraf": "^3.0.0",
     "rollup": "^1.27.13",
     "rollup-plugin-executable": "^1.5.2",
-    "standard-version": "^7.0.1"
+    "standard-version": "^9.0.0"
   },
   "keywords": [
     "docsify",
