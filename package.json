@@ -62,7 +62,7 @@
     "enquirer": "^2.3.6",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
-    "livereload": "^0.9.1",
+    "livereload": "^0.9.2",
     "lru-cache": "^5.1.1",
     "open": "^6.4.0",
     "serve-static": "^1.12.1",
