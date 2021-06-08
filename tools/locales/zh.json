@@ -9,6 +9,7 @@
   "serve": "本地预览",
   "serve.open": "自动打开浏览器",
   "serve.port": "设置端口",
+  "serve.ip": "Listen IP.",
   "serve.indexname": "Custom filename instead of index.html to serve by default",
   "generate": "Docsify的生成器",
   "generate.sidebar": "生成侧边栏文件",

@@ -88,6 +88,10 @@ docsify serve <path> [--open false] [--port 3000]
   - Type: number
   - Default: `3000`
   - Description: Choose a listen port, defaults to `3000`.
+- `--ip` option:
+  - Type: string
+  - Default: `127.0.0.1`
+  - Description: Choose a listen IP, defaults to `127.0.0.1`.
 
 ### `generate` command
 
