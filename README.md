@@ -50,9 +50,9 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init <path> [--local false] [--theme vue]
+docsify init <path> [--local false] [--theme vue] [--plugins false]
 
-# docsify i <path> [-l false] [-t vue]
+# docsify i <path> [-l false] [-t vue] [--plugins false]
 ```
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
