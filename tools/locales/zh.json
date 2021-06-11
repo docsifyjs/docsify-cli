@@ -6,13 +6,14 @@
   "init": "创建 docs",
   "init.local": "拷贝 docsify 到本地",
   "init.theme": "选择主题",
+  "init.plugins": "选择插件",
   "serve": "本地预览",
   "serve.open": "自动打开浏览器",
   "serve.port": "设置端口",
-  "serve.indexname": "Custom filename instead of index.html to serve by default",
-  "generate": "Docsify的生成器",
+  "serve.indexname": "自定义入口文件名，代替默认的 index.html",
+  "generate": "docsify 的生成器",
   "generate.sidebar": "生成侧边栏文件",
-  "livereload.port": "设置livereload端口",
+  "livereload.port": "设置 livereload 端口",
   "usage": "例子",
   "version": "当前版本号"
 }

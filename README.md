@@ -50,9 +50,9 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init <path> [--local false] [--theme vue]
+docsify init <path> [--local false] [--theme vue] [--plugins false]
 
-# docsify i <path> [-l false] [-t vue]
+# docsify i <path> [-l false] [-t vue] [--plugins false]
 ```
 
 `<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
@@ -67,6 +67,11 @@ docsify init <path> [--local false] [--theme vue]
   - Type: string
   - Default: `vue`
   - Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+- `--plugins` option:
+  - Shorthand: `-p`
+  - Type: boolean
+  - Default: `false`
+  - Description: Provide a list of plugins to insert as `<script>` tags to `index.html`.
 
 ### `serve` command
 
@@ -106,7 +111,6 @@ docsify generate <path> [--sidebar _sidebar.md]
   - Description: Generate sidebar file, defaults to `_sidebar.md`.
 
 ## Contributing
-
 Please see the [Contributing Guidelines](./CONTRIBUTING.md)
 
 ## Contribution
