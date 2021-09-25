@@ -7,32 +7,32 @@
 [![npm total downloads](https://img.shields.io/npm/dt/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
 [![npm total monthly](https://img.shields.io/npm/dm/docsify-cli.svg?style=flat-square)](https://www.npmjs.com/package/docsify-cli)
 
-> 🖌 docsify cli - A magical documentation generator.
+> 🖌 docsify cli - 魔法のドキュメントジェネレーター。
 
-## Links
+## リンク
 
 * [docsify](https://github.com/docsifyjs/docsify)
 
-## Screencast
+## スクリーンショット
 
 ![Screencast](https://raw.githubusercontent.com/docsifyjs/docsify-cli/master/media/screencast.gif)
 
-> Running a server on `localhost` with live-reload.
+> live-reloadを使用して `localhost` 上にサーバーを起動しています。
 
-## Installation
+## インストール
 
-Install `docsify-cli` via `npm` or `yarn` globally.
+`docsify-cli`を`npm`か`yarn`を経由して、グローバルにインストールします。
 
 ```shell
 npm i docsify-cli -g
 # yarn global add docsify-cli
 ```
 
-## Usage
+## 使い方
 
-### `init` command
+### `init` コマンド
 
-Use `init` to generate your docs.
+`init` を使ってあなたのドキュメントを作成します。
 
 ```shell
 docsify init <path> [--local false] [--theme vue] [--plugins false]
@@ -40,27 +40,26 @@ docsify init <path> [--local false] [--theme vue] [--plugins false]
 # docsify i <path> [--local false] [--theme vue] [--plugins false]
 ```
 
-`<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
+`<path>` のデフォルトではカレントディレクトリ（現在のディレクトリ）です。`./docs` (または `docs`)などの相対パスを使用します。
 
-* `--local` option:
-  * Shorthand: `-l`
-  * Type: boolean
-  * Default: `false`
-  * Description: Copy `docsify` files to the docs path, defaults to `false` using `unpkg.com` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
-* `--theme` option:
-  * Shorthand: `-t`
-  * Type: string
-  * Default: `vue`
-  * Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
-* `--plugins` option:
-  * Shorthand: `-p`
-  * Type: array
-  * Default: `[]`
-  * Description: Provide a list of plugins to insert as `<script>` tags to `index.html`.
+* `--local` オプション:
+  * 省略: `-l`
+  * タイプ: boolean
+  * デフォルト: `false`
+  * 説明: `docsify` ファイルをドキュメントのパスにコピーします。`unpkg.com`をcontent delivery network (CDN)として使用するとデフォルトではfalseになります。 このオプションを明示的に `false` に設定するためには、 `--no-local` を使用します 。
+* `--theme` オプション:
+  * 省略: `-t`
+  * タイプ: string
+  * デフォルト: `vue`
+  * 説明: テーマを選択します。 デフォルトは `vue`です。 ほかの選択肢は `buble`と `dark` と `pure`です。
+* `--plugins` オプション:
+  * 省略: `-p`
+  * タイプ: array
+  * デフォルト: `[]`
+  * 説明: `<script>` タグとして `index.html`に挿入するプラグインのリストを提供します。
 
-### `serve` command
-
-Run a server on `localhost` with livereload.
+### `serve` コマンド
+livereloadを使用して、`localhost`にサーバーを起動します。
 
 ```shell
 docsify serve <path> [--open false] [--port 3000]
@@ -69,16 +68,16 @@ docsify serve <path> [--open false] [--port 3000]
 ```
 
 * `--open` option:
-  * Shorthand: `-o`
-  * Type: boolean
-  * Default: `false`
-  * Description: Open the docs in the default browser, defaults to `false`. To explicitly set this option to `false` use `--no-open`.
+  * 省略: `-o`
+  * タイプ: boolean
+  * デフォルト: `false`
+  * 説明: ドキュメントをデフォルトのブラウザーで開きます。デフォルトでは `false`　です。 このオプションを明示的に`false`に設定するために `--no-open`を使用します。
 * `--port` option:
-  * Shorthand: `-p`
-  * Type: number
-  * Default: `3000`
-  * Description: Choose a listen port, defaults to `3000`.
+  * 省略: `-p`
+  * タイプ: number
+  * デフォルト: `3000`
+  * 説明: 待ち受けポートを選択します。 デフォルトでは　`3000`　です。
 
-## License
+## ライセンス
 
 MIT
