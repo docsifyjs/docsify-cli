@@ -15,8 +15,8 @@
 
 ## language
 
-* [English](./)
-* [Japanese](./jp)
+* [English](#/)
+* [Japanese](jp/)
 
 ## Screencast
 
