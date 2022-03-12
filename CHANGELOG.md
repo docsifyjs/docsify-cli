@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.4.4](https://github.com/docsifyjs/docsify-cli/compare/v4.4.3...v4.4.4) (2022-03-12)
+
+
+### Features
+
+* support docsify init --plugins ([#99](https://github.com/docsifyjs/docsify-cli/issues/99)) ([8bb295c](https://github.com/docsifyjs/docsify-cli/commit/8bb295c54e92b11f61f38ac261c5dabd7da23b51)), closes [/github.com/docsifyjs/docsify-cli/pull/99#discussion_r621952975](https://github.com/docsifyjs//github.com/docsifyjs/docsify-cli/pull/99/issues/discussion_r621952975)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([#161](https://github.com/docsifyjs/docsify-cli/issues/161)) ([e9ea2c1](https://github.com/docsifyjs/docsify-cli/commit/e9ea2c12ee7d27fb8d83299a8ea86b95935615db))
+* Repeat generation and hump naming ([#164](https://github.com/docsifyjs/docsify-cli/issues/164)) ([238326e](https://github.com/docsifyjs/docsify-cli/commit/238326e79a8f5dfbaba86e4e197c05655f5945e1))
+* Support refresh and livereload in serve when using routerMode history ([#166](https://github.com/docsifyjs/docsify-cli/issues/166)) ([625c9f2](https://github.com/docsifyjs/docsify-cli/commit/625c9f201e6dedb62947530c094b1b911b7a18e4))
+
 ### [4.4.3](https://github.com/docsifyjs/docsify-cli/compare/v4.4.2...v4.4.3) (2021-03-09)
 
 
