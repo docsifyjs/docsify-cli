@@ -61,7 +61,7 @@
     "docsify": "^4.12.2",
     "docsify-server-renderer": ">=4.10.0",
     "enquirer": "^2.3.6",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "get-port": "^5.0.0",
     "livereload": "^0.9.2",
     "lru-cache": "^5.1.1",
