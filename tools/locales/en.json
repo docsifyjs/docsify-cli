@@ -13,6 +13,7 @@
   "serve.indexname": "Custom filename instead of index.html to serve by default",
   "generate": "Docsify's generators",
   "generate.sidebar": "Generate sidebar file",
+  "generate.markdown_titles": "Use markdown parser to get titles instead of guessing by filenames",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
   "version": "Show version number"
