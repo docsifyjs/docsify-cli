@@ -15,5 +15,6 @@
   "generate.sidebar": "生成侧边栏文件",
   "livereload.port": "设置 livereload 端口",
   "usage": "例子",
-  "version": "当前版本号"
+  "version": "当前版本号",
+  "gen.sidebar": "生成侧边栏"
 }

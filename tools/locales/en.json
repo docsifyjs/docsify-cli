@@ -15,5 +15,6 @@
   "generate.sidebar": "Generate sidebar file",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
-  "version": "Show version number"
+  "version": "Show version number",
+  "gen.sidebar": "Generate sidebar"
 }
