@@ -50,12 +50,12 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init <path> [--local false] [--theme vue] [--plugins false]
+docsify init [path] [--local false] [--theme vue] [--plugins false]
 
-# docsify i <path> [-l false] [-t vue] [--plugins false]
+# docsify i [path] [-l false] [-t vue] [--plugins false]
 ```
 
-`<path>` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
+`[path]` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
 
 - `--local` option:
   - Shorthand: `-l`
@@ -78,9 +78,9 @@ docsify init <path> [--local false] [--theme vue] [--plugins false]
 Run a server on `localhost` with livereload.
 
 ```shell
-docsify serve <path> [--open false] [--port 3000]
+docsify serve [path] [--open false] [--port 3000]
 
-# docsify s <path> [-o false] [-p 3000]
+# docsify s [path] [-o false] [-p 3000]
 ```
 
 - `--open` option:
@@ -99,9 +99,9 @@ docsify serve <path> [--open false] [--port 3000]
 Docsify's generators.
 
 ```shell
-docsify generate <path> [--sidebar _sidebar.md]
+docsify generate [path] [--sidebar _sidebar.md]
 
-# docsify g <path> [-s _sidebar.md]
+# docsify g [path] [-s _sidebar.md]
 ```
 
 - `--sidebar` option:
