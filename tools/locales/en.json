@@ -13,8 +13,8 @@
   "serve.indexname": "Custom filename instead of index.html to serve by default",
   "generate": "Docsify's generators",
   "generate.sidebar": "Generate sidebar file",
+  "generate.overwrite": "Allow overwrite generated files",
   "livereload.port": "livereload Listen port.",
   "usage": "Usage",
-  "version": "Show version number",
-  "gen.sidebar": "Generate sidebar"
+  "version": "Show version number"
 }
