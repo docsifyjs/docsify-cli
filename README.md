@@ -99,9 +99,9 @@ docsify serve [path] [--open false] [--port 3000]
 Docsify's generators.
 
 ```shell
-docsify generate [path] [--sidebar _sidebar.md]
+docsify generate [path] [--sidebar _sidebar.md] [--overwrite]
 
-# docsify g [path] [-s _sidebar.md]
+# docsify g [path] [-s _sidebar.md] [-o]
 ```
 
 - `--sidebar` option:
@@ -109,6 +109,12 @@ docsify generate [path] [--sidebar _sidebar.md]
   - Type: string
   - Default: `_sidebar.md`
   - Description: Generate sidebar file, defaults to `_sidebar.md`.
+
+- `--overwrite` option:
+  - Shorthand: `-o`
+  - Type: boolean
+  - Default: `false`
+  - Description: Allow overwrite generated files.
 
 ## Contributing
 Please see the [Contributing Guidelines](./CONTRIBUTING.md)
