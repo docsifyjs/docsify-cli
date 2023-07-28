@@ -13,8 +13,8 @@
   "serve.indexname": "自定义入口文件名，代替默认的 index.html",
   "generate": "docsify 的生成器",
   "generate.sidebar": "生成侧边栏文件",
+  "generate.overwrite": "允许覆盖生成的文件",
   "livereload.port": "设置 livereload 端口",
   "usage": "例子",
-  "version": "当前版本号",
-  "gen.sidebar": "生成侧边栏"
+  "version": "当前版本号"
 }
