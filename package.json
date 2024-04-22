@@ -59,7 +59,7 @@
     "connect-livereload": "^0.6.0",
     "cp-file": "^7.0.0",
     "docsify": "^4.12.2",
-    "docsify-server-renderer": ">=4.10.0",
+    "docsify-server-renderer": ">=4.13.1",
     "enquirer": "^2.3.6",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
