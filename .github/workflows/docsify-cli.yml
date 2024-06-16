@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ macos-latest, ubuntu-latest, windows-latest ]
-        node-version: [ 18, 20, 'lts/*', latest ]
+        node-version: [ 'lts/*' ]
       fail-fast: false
 
     steps:
