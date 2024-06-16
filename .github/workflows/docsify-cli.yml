@@ -13,7 +13,8 @@ jobs:
     strategy:
       matrix:
         os: [ macos-latest, ubuntu-latest, windows-latest ]
-        node-version: [ 18, 20, latest, lts ]
+        node-version: [ 18, 20, latest, 'lts/*' ]
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v4
