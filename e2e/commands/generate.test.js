@@ -10,14 +10,14 @@ const docsPath = path.join(genPath, 'docs')
 test.before('create temp directory', () => {
   // Cleanup if the directory already exists
   if (fs.existsSync(genPath)) {
-    fs.rmdirSync(genPath, {recursive: true})
+    fs.rmSync(genPath, {recursive: true})
   }
 
   fs.mkdirSync(genPath)
 })
 
 test.after('cleanup', () => {
-  fs.rmdirSync(genPath, {recursive: true})
+  fs.rmSync(genPath, {recursive: true})
 })
 
 test('generate _sidebar.md', t => {
