@@ -3,7 +3,6 @@
   "group.globaloptions": "Globale Optionen",
   "help": "Zeige Hilfe an",
   "init": "Erzeuge neue Dokumentation.",
-  "start": "Server for SSR",
   "init.local": "Kopiere docsify Dateien in lokale Ordner. Um explizit --local auf false zu setzen, kannst du --no-local verwenden.",
   "init.theme": "Zu verwendende Theme Dateien.",
   "serve": "Lasse lokalen Server zur Webseitenvorschau laufen.",
