@@ -62,11 +62,11 @@ docsify init [path] [--local false] [--theme vue] [--plugins false]
   - Type: boolean
   - Default: `false`
   - Description: Copy `docsify` files to the docs path, defaults to `false` using `cdn.jsdelivr.net` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
-- `--theme` option:
-  - Shorthand: `-t`
-  - Type: string
-  - Default: `vue`
-  - Description: Choose a theme, defaults to `vue`, other choices are `buble`, `dark` and `pure`.
+- `--previewRelease` option:
+  - Shorthand: `--rc`
+  - Type: boolean
+  - Default: `false`
+  - Description: Try `docsify` preview release version (`rc` resource).
 - `--plugins` option:
   - Shorthand: `-p`
   - Type: boolean
