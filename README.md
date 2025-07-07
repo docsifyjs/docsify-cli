@@ -62,7 +62,7 @@ docsify init [path] [--local false] [--theme vue] [--plugins false]
   - Type: boolean
   - Default: `false`
   - Description: Copy `docsify` files to the docs path, defaults to `false` using `cdn.jsdelivr.net` as the content delivery network (CDN). To explicitly set this option to `false` use `--no-local`.
-- `--previewRelease` option:
+- `--rcMode` option:
   - Shorthand: `--rc`
   - Type: boolean
   - Default: `false`
