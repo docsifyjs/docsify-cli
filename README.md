@@ -50,9 +50,9 @@ npm i docsify-cli -g
 Use `init` to generate your docs.
 
 ```shell
-docsify init [path] [--local false] [--theme vue] [--plugins false]
+docsify init [path] [--local false] [--rcMode] [--theme vue] [--plugins]
 
-# docsify i [path] [-l false] [-t vue] [--plugins false]
+# docsify i [path] [-l false] [--rc] [-t vue] [-p]
 ```
 
 `[path]` defaults to the current directory. Use relative paths like `./docs` (or `docs`).
@@ -67,6 +67,11 @@ docsify init [path] [--local false] [--theme vue] [--plugins false]
   - Type: boolean
   - Default: `false`
   - Description: Try `docsify` preview release version (`rc` resource).
+- `--theme` option:
+  - Shorthand: `-t`
+  - Type: string
+  - Default: `vue`
+  - Description: Choose a theme, defaults to `vue`.
 - `--plugins` option:
   - Shorthand: `-p`
   - Type: boolean
@@ -114,7 +119,7 @@ docsify generate [path] [--sidebar _sidebar.md] [--overwrite]
   - Shorthand: `-o`
   - Type: boolean
   - Default: `false`
-  - Description: Allow overwrite generated files.
+  - Description: Allow to overwrite generated files.
 
 ## Contributing
 Please see the [Contributing Guidelines](./CONTRIBUTING.md)
