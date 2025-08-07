@@ -4,6 +4,7 @@
   "help": "帮助",
   "init": "创建 docs",
   "init.local": "拷贝 docsify 到本地",
+  "init.rc": "体验 docsify 预览版本，默认使用最新正式版本",
   "init.theme": "选择主题",
   "init.plugins": "选择插件",
   "serve": "本地预览",
