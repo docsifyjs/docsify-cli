@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0-rc.1](https://github.com/docsifyjs/docsify-cli/compare/v4.4.4...v5.0.0-rc.1) (2025-08-07)
+
+
+### Features
+
+* add --overwrite flag to generator ([#182](https://github.com/docsifyjs/docsify-cli/issues/182)) ([0fd9b1a](https://github.com/docsifyjs/docsify-cli/commit/0fd9b1aa89d8904a39ec6949beb2980c9b628ec0))
+
+
+### Bug Fixes
+
+* Cannot read property 'indexOf' of undefined ([#200](https://github.com/docsifyjs/docsify-cli/issues/200)) ([210a49d](https://github.com/docsifyjs/docsify-cli/commit/210a49d91ae915d5dc88249f3c8caddda1b34d43))
+* generate wrong detect relative path on Windows ([#192](https://github.com/docsifyjs/docsify-cli/issues/192)) ([3f187f0](https://github.com/docsifyjs/docsify-cli/commit/3f187f0d5d8f4c4933f9a6198c1263b4781e7799))
+
 ### [4.4.4](https://github.com/docsifyjs/docsify-cli/compare/v4.4.3...v4.4.4) (2022-03-12)
 
 
