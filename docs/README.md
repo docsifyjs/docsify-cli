@@ -83,6 +83,11 @@ docsify serve [path] [--open false] [--port 3000]
   - Type: number
   - Default: `3000`
   - Description: Choose a listen port, defaults to `3000`.
+- `--host` option:
+  - Shorthand: `-H`
+  - Type: string
+  - Default: `"localhost"`
+  - Description: Choose a host to bind to, defaults to `"localhost"`.
 
 ### `generate` command
 
