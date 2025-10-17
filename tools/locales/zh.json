@@ -10,6 +10,7 @@
   "serve": "本地预览",
   "serve.open": "自动打开浏览器",
   "serve.port": "设置端口",
+  "serve.host": "设置监听地址",
   "serve.indexname": "自定义入口文件名，代替默认的 index.html",
   "generate": "docsify 的生成器",
   "generate.sidebar": "生成侧边栏文件",
