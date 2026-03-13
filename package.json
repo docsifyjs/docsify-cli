@@ -53,7 +53,7 @@
     "connect-history-api-fallback": "^1.6.0",
     "connect-livereload": "^0.6.0",
     "cp-file": "^7.0.0",
-    "docsify": "^v5.0.0-rc.3",
+    "docsify": "^v5.0.0-rc.4",
     "enquirer": "^2.3.6",
     "fs-extra": "^8.1.0",
     "get-port": "^5.0.0",
