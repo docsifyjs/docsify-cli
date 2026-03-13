@@ -1,12 +1,8 @@
 {
   "name": "docsify-cli",
-  "version": "5.0.0-rc.3",
+  "version": "5.0.0-rc.4",
   "description": "A magical documentation generator.",
-  "author": {
-    "name": "qingwei-li",
-    "email": "cinwell.li@gmail.com",
-    "url": "https://github.com/QingWei-Li"
-  },
+  "author": "https://github.com/docsifyjs/docsify-cli/graphs/contributors",
   "homepage": "https://github.com/docsifyjs/docsify-cli#readme",
   "repository": {
     "type": "git",

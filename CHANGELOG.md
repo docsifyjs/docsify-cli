@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0-rc.4](https://github.com/docsifyjs/docsify-cli/compare/v5.0.0-rc.3...v5.0.0-rc.4) (2026-03-13)
+
 ## [5.0.0-rc.3](https://github.com/docsifyjs/docsify-cli/compare/v5.0.0-rc.1...v5.0.0-rc.3) (2025-12-17)
 
 
