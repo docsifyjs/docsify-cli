@@ -127,7 +127,8 @@ docsify generate [path] [--sidebar _sidebar.md] [--overwrite]
   - Description: Allow to overwrite generated files.
 
 ## Contributing
-Please see the [Contributing Guidelines](./CONTRIBUTING.md)
+
+Please see the [Contributing Guidelines](CONTRIBUTING.md)
 
 ## Contribution
 

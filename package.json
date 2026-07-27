@@ -1,6 +1,6 @@
 {
   "name": "docsify-cli",
-  "version": "5.0.0-rc.4",
+  "version": "5.0.0",
   "description": "A magical documentation generator.",
   "author": "https://github.com/docsifyjs/docsify-cli/graphs/contributors",
   "homepage": "https://github.com/docsifyjs/docsify-cli#readme",
