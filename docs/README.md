@@ -13,6 +13,11 @@
 
 * [docsify](https://github.com/docsifyjs/docsify)
 
+## language
+
+* [English](#/)
+* [Japanese](jp/)
+
 ## Screencast
 
 ![Screencast](https://raw.githubusercontent.com/docsifyjs/docsify-cli/master/media/screencast.gif)
